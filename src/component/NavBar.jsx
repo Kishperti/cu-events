@@ -22,7 +22,7 @@ const Navbar = () => {
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contact Us</li>
       </ul>
       </div>
-      <div className="w-45"><button className="bg-red-500 text-white font-bold py-1.5 px-7  w-38 mx-auto my-4 flex flex-col items-start rounded-tr-3xl hover:bg-red-800 transition-all duration-300 ease-in-out cursor-pointer shadow-red-700">Log In</button></div>
+      <div className="w-45"><button className="bg-red-500 text-white font-bold py-1.5 px-7  w-38 mx-auto my-4 flex flex-col items-start rounded-tr-3xl hover:bg-red-800 transition-all duration-300 ease-in-out cursor-pointer shadow-red-00">Log In</button></div>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
