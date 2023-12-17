@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'audio':['Audiowide', 'sans-serif'],
+        // 'sans': ['-apple-system', 'BlinkMacSystemFont'],
+        // 'serif': ['Georgia', 'Cambria'],
+      //  'mono': ['SFMono-Regular', 'Menlo'],},
   },
   plugins: [],
+}
+ }
 }
