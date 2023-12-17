@@ -11,7 +11,8 @@ const Navbar = () => {
 
   return (
     <div className="flex justify-between items-center h-25 max-w-[1240px] mx-auto my-2 px-5 text-white">
-      <h1 className="text-3xl font-bold text-[#df0000] my--2">CAC.</h1>
+        <div><h1 className="text-3xl font-bold text-[#df0000] my--2">CAC.</h1></div>
+      <div>
       <ul className="hidden md:flex items-center space-x-4">
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Home</li>
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Achievements</li>
@@ -19,13 +20,13 @@ const Navbar = () => {
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Partners</li>
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">About</li>
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contact Us</li>
-        <li className="w-45">
-          <button className="bg-red-500 text-white font-bold py-1.5 px-7  w-38 mx-auto my-4 flex flex-col items-start rounded-tr-3xl">Log In</button>
-        </li>
       </ul>
+      </div>
+      <div className="w-45"><button className="bg-red-500 text-white font-bold py-1.5 px-7  w-38 mx-auto my-4 flex flex-col items-start rounded-tr-3xl">Log In</button></div>
       <div onClick={handleNav} className="block md:hidden">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
+      <div className=' md:hidden transition duration-200 ease-in-out '>
       <ul
         className={
           nav
@@ -57,6 +58,9 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
+
+      </div>
+      
     </div>
   );
   

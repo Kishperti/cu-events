@@ -1,13 +1,13 @@
-// src/App.jsx
 
 import React from "react";
-// import Navbar from './components/Navbar';
 import NavBar from "./component/NavBar";
+import About from './component/About';
 
 const App = () => {
   return (
     <div>
-      <NavBar />
+      <NavBar/>
+      <About/>
     </div>
   );
 };
