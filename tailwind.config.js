@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         'maven':['Maven Pro', 'sans-serif'],
+        'oswald':['Oswald', 'sans-serif'],
         // 'sans': ['-apple-system', 'BlinkMacSystemFont'],
         // 'serif': ['Georgia', 'Cambria'],
       //  'mono': ['SFMono-Regular', 'Menlo'],},
