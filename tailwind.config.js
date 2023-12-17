@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        'audio':['Audiowide', 'sans-serif'],
+        'maven':['Maven Pro', 'sans-serif'],
         // 'sans': ['-apple-system', 'BlinkMacSystemFont'],
         // 'serif': ['Georgia', 'Cambria'],
       //  'mono': ['SFMono-Regular', 'Menlo'],},

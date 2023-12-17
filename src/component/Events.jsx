@@ -23,7 +23,7 @@ const eventsData = [
 const EventCard = ({ title, description }) => {
   return (
     <div className="event-card relative overflow-hidden bg-gray-800 p-5 rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:transform hover:scale-125 hover:z-10">
-      <img src="src/assets/SL-091319-23410-12.jpg" alt="Event Image" className="w-full h-32 object-cover mb-4" />
+      <img src='${image}' alt="Event Image" className="w-full h-32 object-cover mb-4" />
       <h3 className="text-xl font-bold mb-2 text-red-50">{title}</h3>
       <p className="text-gray-300">{description}</p>
       <button className="mt-4 bg-red-700 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline hover:bg-red-500 transition duration-300 ease-in-out">Know More</button>
