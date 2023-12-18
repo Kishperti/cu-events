@@ -4,11 +4,11 @@ import React from "react";
 const About = () => {
   return (
     <div className=" w-full container h-full mx-auto pt-12 bg-[#091022] text-white font-maven">
-      <div className="flex flex-col mx-12">
-        <h1 className="text-4xl font-oswald font-bold mt-5 text-white"> <span className="text-[#E2012D]">CHECKOUT</span> ABOUT US</h1>
+      <div className="flex flex-col-reverse lg:flex-col px-7 lg:px-0 lg:mx-12">
+        <h1 className="text-[2rem] lg:text-4xl font-oswald font-bold -mt-2 lg:mt-5 text-white"> <span className="text-[#E2012D]">CHECKOUT</span> ABOUT US</h1>
         <h6 className="ml-1 font-maven">WHO WE ARE!</h6>
       </div>
-      <p className="text-xl py-8 text-justify w-11/12 leading-8 mx-12 font-maven">
+      <p className="text-lg lg:text-xl py-8 text-justify w-full px-7 leading-8 lg:px-12 font-maven">
         Chandigarh University Academic Competitions, where innovation converges with education to create an unparalleled academic spectacle. Our team is a dynamic collective of visionaries, strategists, and go-getters who are dedicated to orchestrate events that transcend conventional boundaries. We are an ensemble of dedicated professionals, passionate about creating transformative experiences through hackathons, workshops, and various academic events
         <br />
         <br />
@@ -17,7 +17,7 @@ const About = () => {
 
       </p>
       <div className="w-full border-b-4 border-red-600 overflow-y-hidden mt-8">
-        <h1 className="text-9xl  font-oswald tracking-tight font-bold text-center opacity-30 text-white -mb-2">CAC  -  EVENTS</h1>
+        <h1 className="text-6xl lg:text-9xl font-oswald tracking-tight font-bold text-center opacity-30 text-white -mb-2">CAC  -  EVENTS</h1>
       </div>
     </div>
   );
