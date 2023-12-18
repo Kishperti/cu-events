@@ -2,7 +2,7 @@
 import React from "react";
 import NavBar from "./component/NavBar";
 import About from './component/About';
-// import Footer from "./component/footer";
+import Footer from "./component/Footer";
 import Events from './component/Events';
 
 const App = () => {
@@ -11,6 +11,7 @@ const App = () => {
       <NavBar/>
       <About/>
       <Events/>
+      <Footer/>
     </div>
   );
 };

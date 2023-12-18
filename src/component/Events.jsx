@@ -40,8 +40,9 @@ const eventsData = [
 
 const EventCard = ({ title, description, image }) => {
   return (
-    <div className="swiper-slide relative overflow-hidden bg-gray-800 p-5 rounded-lg shadow-lg">
-      <img src={image} alt="Event Image" className="w-full h-32 object-cover mb-4" />
+    
+    <div className="swiper-slide relative overflow-hidden bg-black p-5 rounded-lg shadow-lg">
+      <img src={image} alt="Event Image" className="w-full h-28 object-cover mb-4" />
       <h3 className="text-xl font-bold mb-2 text-red-50">{title}</h3>
       <p className="text-gray-300">{description}</p>
       <button className="mt-4 bg-red-700 text-white px-4 py-2 rounded focus:outline-none focus:shadow-outline hover:bg-red-500 transition duration-300 ease-in-out">Know More</button>
@@ -62,7 +63,8 @@ function App() {
   }, []);
 
   return (
-    <div className="App mt-1 h-screen p-32">
+    <div className="max-w-[1240px] mx-auto p-5 w-full">
+    <div className="App mt-1 h-screen p-32 w-full">
       <h1 className='text-white text-6xl  font-bold italic text-center'>OUR <span className='text-red-600'>EVENTS</span></h1>
       <div className='text-red-600 text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
       <div className="swiper-container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
@@ -74,6 +76,7 @@ function App() {
         <div className="swiper-button-next "></div>
         <div className="swiper-button-prev "></div>
       </div>
+    </div>
     </div>
   );
 }

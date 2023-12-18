@@ -3,9 +3,9 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="container h-screen mx-auto p-12 bg-[#091022] text-white font-maven">
+    <div className=" w-full container h-screen mx-auto p-12 bg-[#091022] text-white font-maven">
         <div className="mr-32">
-        <h1 className="text-4xl font-oswald font-bold mt-5 text-white"> <span className=" text-red-600">CHECKOUT</span> ABOUT US</h1>
+        <h1 className="text-4xl font-oswald font-bold mt-5 text-white"> <span className="text-[#E2012D]">CHECKOUT</span> ABOUT US</h1>
         <h6 className="ml-2">WHO WE ARE!</h6>
         </div>
       
@@ -18,8 +18,8 @@ const About = () => {
 
       </p>
 
-      <h1 className="text-9xl h-36 font-bold text-center opacity-30 text-white ">CAC-EVENTS</h1>
-      <h1 className="border-double border-b-4 border-red-600"></h1>
+      <h1 className="text-9xl  font-oswald tracking-tight font-bold text-center opacity-30 text-white ">CAC  -  EVENTS</h1>
+      <h1 className=" w- full border-double border-b-4 border-red-600"></h1>
     </div>
   );
 };
