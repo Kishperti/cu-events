@@ -47,13 +47,15 @@ const Footer = () => {
                             SEND
                         </button>
                     </form>
-                    <div className="flex justify-evenly p-8 cursor-pointer md:w-[30%] my-6 mt-12 lg:mt-0">
-                        <FaFacebookSquare size={30} />
-                        <FaInstagram size={30} />
-                        <FaTwitterSquare size={30} />
-                        <FaGithubSquare size={30} />
-                        <FaDribbbleSquare size={30} />
+                    <div className="left-0 flex  p-8 cursor-pointer md:w-[30%] my-6 mt-12 lg:mt-0">
+                    <FaFacebookSquare size={30} className="mr-4" />
+                    <FaInstagram size={30} className="mr-4" />
+                    <FaTwitterSquare size={30} className="mr-4" />
+                    <FaGithubSquare size={30} className="mr-4" />
+                    <FaDribbbleSquare size={30} />
                     </div>
+  
+
                 </div>
                 <div className="lg:col-span-1 flex flex-col lg:flex-row justify-between mt-6">
                     <div className="mb-6 lg:mb-0">
