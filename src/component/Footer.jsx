@@ -82,7 +82,7 @@ const Footer = () => {
                         <ul className='font-maven'>
                             <li className="py-2 text-sm">VAlorant</li>
                             <li className="py-2 text-sm">PUBG</li>
-                            <li className="py-2 text-sm">CS:GO</li>
+                            <li className="py-2 text-sm">C:GO</li>
                         </ul>
                     </div>
                 </div>
