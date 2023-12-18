@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLongArrowAltRight } from "react-icons/fa";
 import {
     FaDribbbleSquare,
     FaFacebookSquare,
@@ -9,8 +10,20 @@ import {
 
 const Footer = () => {
     return (
-        <div className='w-full bg-[#091022]'>
-            <div className="max-w-[1240px] mx-auto py-12 px-4 lg:grid lg:grid-cols-3 gap-4 text-gray-300">
+        <div>
+         <div className="z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white top-[30%] transform -translate-y-1/2 left-[25%] flex flex-col ">
+
+                <span className='ml-[8%]'>MORE THAN 10K MEMBERS</span>
+                <span className='text-[#091022] ml-[8%]'>JOIN OUR GUILD!</span>
+                <button
+                    type="submit"
+                    className="bg-[#091022] text-white py-2 px-6 rounded-tr-full ml-[60%] lg:w-[150px] lg:mt-0 hover:bg-[#121f2e]" >
+                    <FaLongArrowAltRight />
+                </button>
+            </div>
+        <div className=' bg-[#091022] mt-[12%]'>
+            
+            <div className="max-w-[1240px] mx-auto py-12 px-4 mt-40 lg:grid lg:grid-cols-3 gap-4 text-gray-300">
                 <div className="lg:col-span-2">
                     <h1 className="w-full text-3xl text-[#E2012D]">
                         <span className='text-white font-extrabold'> CAC </span> EVENTS
@@ -24,7 +37,6 @@ const Footer = () => {
                             name="email"
                             placeholder="Enter your email"
                             className="w-full lg:w-[40%] py-2 px-4 border border-indigo-500 focus:outline-none focus:border-[#E2012D]"
-                            // Add any necessary state and event handlers for the form
                         />
                         <button
                             type="submit"
@@ -71,9 +83,11 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
+            
             <div className="w-full bg-[#E2012D] py-4 text-center text-white">
                 COPYRIGHT CAC. ALL RIGHT RESERVED
             </div>
+        </div>
         </div>
     );
 }
