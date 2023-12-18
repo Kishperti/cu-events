@@ -10,12 +10,12 @@ import achivBox from "../assets/achiv-box1.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import './styles.css';
 import { Pagination } from 'swiper/modules';
-export default function Events() {
+export default function Achievements() {
   return (
     <>
-      <div className="min-h-screen w-full bg-[#091022] pt-16 relative">
+      <div className="min-h-screen w-full bg-[#d9d9d9] py-16 relative">
         <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
-        <h1 className='text-white text-6xl font-bold text-cente font-oswald text-center mb-4'>OUR <span className='text-[#E2012D]'>EVENTS</span></h1>
+        <h1 className='text-[#141414] text-6xl font-bold text-cente font-oswald text-center mb-4'>OUR <span className='text-[#E2012D]'>FEATS</span></h1>
         <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
         <div className="box hidden lg:block">
           <Swiper
@@ -29,10 +29,10 @@ export default function Events() {
             className="mySwiper px-20 mt-12"
           >
             <SwiperSlide>
-              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -41,10 +41,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -53,10 +53,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -65,10 +65,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -79,6 +79,7 @@ export default function Events() {
           </Swiper>
         </div>
         {/* Mobile Slider */}
+        
         <div className="box block lg:hidden">
           <Swiper
             slidesPerView={1}
@@ -91,10 +92,10 @@ export default function Events() {
             className="mySwiper px-16 mt-12"
           >
             <SwiperSlide>
-              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -103,10 +104,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -115,10 +116,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -127,10 +128,10 @@ export default function Events() {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
                 <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
                 <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
+                  <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                   </div>
@@ -139,9 +140,6 @@ export default function Events() {
               </div>
             </SwiperSlide>
           </Swiper>
-        </div>
-        <div className="w-full border-b-4 border-red-600 overflow-y-hidden mt-28">
-          <h1 className="text-6xl lg:text-9xl font-oswald tracking-tight font-bold text-center opacity-30 text-[#E2012D] -mb-6">OUR PARTNERS</h1>
         </div>
       </div>
     </>
