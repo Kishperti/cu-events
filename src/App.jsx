@@ -13,7 +13,7 @@ const App = () => {
       <Landing/>
       <About/>
       <Events/>
-      <Footer/>
+      {/* <Footer/> */}
     </div>
   );
 };
