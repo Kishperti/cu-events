@@ -10,14 +10,14 @@ import Partner from "./component/Partner";
 
 const App = () => {
   return (
-    <div>
+    <div className="bg-white">
       <NavBar/>
       <Landing/>
       <About/>
       <Achievements/>
       <Events/>
       <Partner/>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   );
 };

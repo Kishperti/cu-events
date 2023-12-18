@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
     return (
-        <div className='relative'>
+        <div className='relative bg-white w-full'>
          <div className="z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white transform -translate-y-3/4 left-[25%] flex h-[140px] items-center ">
             <div className='ml-[30px]'>
             <span className=''>MORE THAN 10K MEMBERS</span>
