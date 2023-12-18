@@ -11,15 +11,17 @@ import {
 const Footer = () => {
     return (
         <div>
-         <div className="z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white top-[30%] transform -translate-y-1/2 left-[25%] flex flex-col ">
-
-                <span className='ml-[8%]'>MORE THAN 10K MEMBERS</span>
-                <span className='text-[#091022] ml-[8%]'>JOIN OUR GUILD!</span>
-                <button
+         <div className="z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white top-[30%] transform -translate-y-1/2 left-[25%] flex h-[140px] items-center ">
+            <div className='ml-[30px]'>
+            <span className=''>MORE THAN 10K MEMBERS</span>
+            <br />
+            <span className='text-[#091022]'>JOIN OUR GUILD!</span>
+            </div>
+               <div> <button
                     type="submit"
                     className="bg-[#091022] text-white py-2 px-6 rounded-tr-full ml-[60%] lg:w-[150px] lg:mt-0 hover:bg-[#121f2e]" >
                     <FaLongArrowAltRight />
-                </button>
+                </button></div>
             </div>
         <div className=' bg-[#091022] mt-[12%]'>
             
@@ -45,7 +47,7 @@ const Footer = () => {
                             SEND
                         </button>
                     </form>
-                    <div className="flex p-8 cursor-pointer md:w-[30%] my-6 mt-12 lg:mt-0">
+                    <div className="flex justify-evenly p-8 cursor-pointer md:w-[30%] my-6 mt-12 lg:mt-0">
                         <FaFacebookSquare size={30} />
                         <FaInstagram size={30} />
                         <FaTwitterSquare size={30} />
