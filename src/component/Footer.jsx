@@ -4,6 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocation } from "react-icons/io5";
+import footerlogo from "../assets/logonav.png";
 import {
   FaDribbbleSquare,
   FaFacebookSquare,
@@ -36,7 +37,7 @@ const Footer = () => {
           <div className="w-full lg:w-[60%]">
             <h1 className="w-full text-3xl text-[#E2012D]">
               <img
-                src="src/assets/c_a_c__2_-removebg-preview.png"
+                src={footerlogo}
                 alt=""
                 className="w-[25%] h-[10%px]"
               />

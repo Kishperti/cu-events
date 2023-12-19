@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { MdDoubleArrow } from "react-icons/md";
+import navlogo from "../assets/logonav.png";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -16,7 +17,7 @@ const NavBar = () => {
         <div className="lg:ml-[50px] ml-0 text-2xl font-bold">
           <a href="/">
             <img
-              src="src/assets/c_a_c__2_-removebg-preview.png"
+              src={navlogo}
               alt=""
               className="w-[30%] h-[10%px]"
             />
