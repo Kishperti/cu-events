@@ -8,7 +8,7 @@ const About = () => {
         <h1 className="text-[2rem] lg:text-4xl font-oswald font-bold -mt-2 lg:mt-5 text-white"> <span className="text-[#E2012D]">CHECKOUT</span> ABOUT US</h1>
         <h6 className="ml-1 font-maven">WHO WE ARE!</h6>
       </div>
-      <p className="text-lg lg:text-xl py-8 text-justify w-full px-7 leading-8 lg:px-12 font-maven">
+      <p className="text-lg lg:text-xl py-8 text-justify w-full px-7 leading-8 lg:px-12 text-white font-maven">
         Chandigarh University Academic Competitions, where innovation converges with education to create an unparalleled academic spectacle. Our team is a dynamic collective of visionaries, strategists, and go-getters who are dedicated to orchestrate events that transcend conventional boundaries. We are an ensemble of dedicated professionals, passionate about creating transformative experiences through hackathons, workshops, and various academic events
         <br />
         <br />

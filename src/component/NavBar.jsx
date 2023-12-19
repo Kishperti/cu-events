@@ -13,7 +13,7 @@ const NavBar = () => {
     <header className="bg-black text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="ml-[50px] text-2xl font-bold">
+        <div className="lg:ml-[50px] ml-0 text-2xl font-bold">
           <a href="/">
             <img
               src="src/assets/c_a_c__2_-removebg-preview.png"
@@ -22,14 +22,12 @@ const NavBar = () => {
             />
           </a>
         </div>
-
-        {/* Desktop navigation */}
         <div className="hidden md:flex items-center mr-[20%]">
           <ul className="flex ">
             <li>
               <a
                 href="/"
-                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Home
               </a>
@@ -37,7 +35,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/achievements"
-                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Achievements
               </a>
@@ -45,7 +43,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/events"
-                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Events
               </a>
@@ -53,7 +51,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/partners"
-                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Partners
               </a>
@@ -61,7 +59,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/about"
-                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+                className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 About
               </a>
@@ -69,7 +67,7 @@ const NavBar = () => {
             <li>
               <a
                 href="/contacts"
-                className="p-4 transition-all hover:text-[#df0000] cursor-pointer"
+                className="p-4 font-maven uppercase transition-all hover:text-[#df0000] cursor-pointer"
               >
                 Contacts
               </a>
@@ -99,27 +97,27 @@ const NavBar = () => {
         <div className="md:hidden bg-black p-4 space-y-4 text-xl mt-3 hover: text-white hover:transition-opacity duration-500 ease-in-out border-b border-white hover:border-red-700">
           <ul>
             <a href="/">
-              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-whit border-l-8 hover:border-red-700">
+              <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-whit border-l-8 hover:border-red-700">
                 HOME
               </li>
             </a>
             <a href="/achievements">
-              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
+              <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ACHIEVEMENTS
               </li>
             </a>
             <a href="/events">
-              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
+              <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 EVENTS
               </li>
             </a>
             <a href="/about">
-              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
+              <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ABOUT
               </li>
             </a>
             <a href="/contacts">
-              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
+              <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 CONTACT US
               </li>
             </a>
