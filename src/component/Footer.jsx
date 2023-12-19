@@ -16,37 +16,24 @@ import {
 const Footer = () => {
   return (
     <div className="relative bg-white w-full">
-      {/* Mobile CTA Section */}
-      <div className="md:hidden text-center bg-[#E2012D] py-4 text-white">
-        <span className="block text-2xl font-extrabold font-maven mb-2">
-          MORE THAN 10K MEMBERS
-        </span>
-        <span className="block text-[#091022]">JOIN OUR GUILD!</span>
-        <button className="bg-[#091022] text-white py-2 px-6 rounded-tr-full mt-2 hover:bg-[#121f2e]">
-          <FaLongArrowAltRight />
-        </button>
-      </div>
-
-      {/* Desktop CTA Section */}
-      <div className="hidden md:flex z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white transform -translate-y-3/4 left-[25%] h-[140px] items-center">
+      <div className="hidden md:flex z-50 absolute w-[55%] bg-[#E2012D] py-4 text-left text-4xl font-extrabold font-maven text-white transform -translate-y-3/4 left-[25%] h-[140px] items-center ">
         <div className="ml-[30px]">
           <span className="">MORE THAN 10K MEMBERS</span>
           <br />
           <span className="text-[#091022]">JOIN OUR GUILD!</span>
         </div>
         <div>
+          {" "}
           <button
             type="submit"
-            className="bg-[#091022] text-white py-2 px-6 rounded-tr-full ml-[30%] lg:w-[150px] lg:mt-0 hover:bg-[#121f2e]"
+            className="bg-[#091022] text-white py-2 px-6 rounded-tr-full ml-[40%] lg:w-[150px] lg:mt-0 hover:bg-[#121f2e]"
           >
             <FaLongArrowAltRight />
           </button>
         </div>
       </div>
-
-      {/* Rest of the Footer */}
-      <div className="bg-[#091022] mt-[12%]">
-        <div className="max-w-[1240px] mx-auto py-12 mt-4 lg:grid lg:grid-cols-3 gap-4 text-gray-300">
+      <div className=" bg-[#091022] mt-[12%]">
+        <div className="max-w-[1240px] mx-auto py-12 mt-40 lg:grid lg:grid-cols-3 gap-4 text-gray-300">
           <div className="lg:col-span-2">
             <h1 className="w-full text-3xl text-[#E2012D]">
               <img
@@ -62,9 +49,12 @@ const Footer = () => {
               <a href="https://www.youtube.com/@CAC-Podcast"><FaYoutube size={30} className="mr-4" /></a>
               <a href="https://www.instagram.com/cac.cuchd/"><FaInstagram size={30} className="mr-4" /></a>
               <a href="https://www.linkedin.com/in/cac-cu-academic-competitions-a9b4932a0/"><FaLinkedin size={30} className="mr-4" /></a>
+              {/* <FaTwitterSquare size={30} className="mr-4" /> */}
+              {/* <FaGithubSquare size={30} className="mr-4" /> */}
+              {/* <FaDribbbleSquare size={30} /> */}
             </div>
           </div>
-          <div className="lg:col-span flex flex-col lg:flex-row justify-between mt-6">
+          <div className="lg:col-span flex flex-col sm:flex-row lg:flex-row justify-between mt-6 p-4 md:p-12 md:ml-6">
             <div className="mb-6 lg:mb-0">
               <h1 className="font-bold text-white font-oswald">
                 QUICK <span className="text-[#E2102d]">LINKS</span>

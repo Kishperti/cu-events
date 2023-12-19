@@ -20,11 +20,11 @@ export default function App() {
                 modules={[Autoplay]}
                 className="mySwiper"
             >
-                <SwiperSlide className='w-full min-h-screen flex flex-col pl-[20px] lg:pl-[100px] lg:pr-[25px] swiper-slide1'>
+                <SwiperSlide className=' w-full min-h-screen flex flex-col pl-[20px] lg:pl-[100px] lg:pr-[25px] swiper-slide1'>
                     <div className='w-full flex flex-col mt-6 lg:mt-20 justify-center items-start'>
-                        <h1 className='text-[3rem] lg:text-6xl font-bold text-[#E2012D] font-oswald'>EVENT 1</h1>
-                        <h1 className='text-[3rem] font-bold text-[#ffffff] font-oswald -mt-2 w-full'>LOREM IPSUM</h1>
-                        <div className="lg:text-2xl text-lg font-extralight text-white font-maven w-[90%] lg:w-[50%] mt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, . Luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
+                        <h1 className='text-[3rem]  lg:text-6xl sm:text-[1.5rem] md:text-[2rem]  font-bold text-[#E2012D] font-oswald'>EVENT 1</h1>
+                        <h1 className='text-[3rem] lg:text-6xl font-bold text-[#ffffff] font-oswald sm:text-[1.5rem] md:text-[2rem] mt-2 w-full'>LOREM IPSUM</h1>
+                        <div className="lg:text-2xl text-lg md:text-[1rem] font-extralight text-white font-maven w-[90%] lg:w-[50%] mt-2 text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, . Luctus nec ullamcorper mattis, pulvinar dapibus leo.</div>
                         <button className="bg-[#E2012D] text-white py-2 lg:py-3 px-12 w-80 mt-12 flex justify-between items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-2xl lg:text-3xl uppercase tracking-widest">Join Event &nbsp; &nbsp; <FaLongArrowAltRight /> </button>
                     </div>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-11 lg:gap-24 w-full py-[50px] mt-20 px-[20px] lg:px-12 mb-[50px] bg-[#00000081]">
