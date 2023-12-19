@@ -1,9 +1,6 @@
-
-
-import React, { useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { MdDoubleArrow } from 'react-icons/md';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import React, { useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { MdDoubleArrow } from "react-icons/md";
 
 const NavBar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,68 +10,127 @@ const NavBar = () => {
   };
 
   return (
-    <header className="bg-black text-white p-4 ">
-      <div className="container mx-auto flex justify-between mr-10 items-center">
+    <header className="bg-black text-white p-4">
+      <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <div className="ml-[50px] text-2xl font-bold"><img src="src/assets/c_a_c__2_-removebg-preview.png" alt="" className='w-[30%] h-[10%px]'/></div>
-        <div>
-        <ul className="hidden md:flex items-center space-x-12">
-          <a href=""><li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Home</li></a>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Achievements</li>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Events</li>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Partners</li>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">About</li>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contacts</li>
-        </ul>
-      </div>
+        <div className="ml-[50px] text-2xl font-bold">
+          <a href="/">
+            <img
+              src="src/assets/c_a_c__2_-removebg-preview.png"
+              alt=""
+              className="w-[30%] h-[10%px]"
+            />
+          </a>
+        </div>
+
+        {/* Desktop navigation */}
+        <div className="hidden md:flex items-center mr-[20%]">
+          <ul className="flex ">
+            <li>
+              <a
+                href="/"
+                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a
+                href="/achievements"
+                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+              >
+                Achievements
+              </a>
+            </li>
+            <li>
+              <a
+                href="/events"
+                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+              >
+                Events
+              </a>
+            </li>
+            <li>
+              <a
+                href="/partners"
+                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+              >
+                Partners
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                className="p-4 mr-4 hover:text-[#df0000] transition-all cursor-pointer"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="/contacts"
+                className="p-4 transition-all hover:text-[#df0000] cursor-pointer"
+              >
+                Contacts
+              </a>
+            </li>
+          </ul>
+        </div>
 
         {/* Login button for laptop/desktop */}
-        <button className=" w-[145px]  justify-center font-bold hidden md:block bg-[#E2012D] text-white text-center cursor-pointer transition-all duration-300 ease-in-out px-4 py-2 rounded hover:bg-white hover:text-red-600 rounded-tr-full">Login</button>
+        <a href="">
+          <button className="w-[145px] justify-center font-bold hidden md:block bg-[#E2012D] text-white text-center cursor-pointer transition-all duration-300 ease-in-out px-4 py-2 rounded hover:bg-white hover:text-red-600 rounded-tr-full">
+            Login
+          </button>
+        </a>
 
         {/* Mobile navigation button */}
         <button className="md:hidden" onClick={toggleMobileMenu}>
-  {isMobileMenuOpen ? (
-    <AiOutlineClose size={20} className='' />
-  ) : (
-    <AiOutlineMenu size={20} />
-  )}
-</button>
+          {isMobileMenuOpen ? (
+            <AiOutlineClose size={20} className="" />
+          ) : (
+            <AiOutlineMenu size={20} />
+          )}
+        </button>
       </div>
 
       {/* Mobile navigation menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black p-4 space-y-4 text-xl  mt-3 hover: text-white hover:transition-opacity duration-500 ease-in-out border-b border-white hover:border-red-700">
+        <div className="md:hidden bg-black p-4 space-y-4 text-xl mt-3 hover: text-white hover:transition-opacity duration-500 ease-in-out border-b border-white hover:border-red-700">
           <ul>
-           <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-whit border-l-8 hover:border-red-700">
+            <a href="/">
+              <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-whit border-l-8 hover:border-red-700">
                 HOME
               </li>
+            </a>
+            <a href="/achievements">
               <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ACHIEVEMENTS
               </li>
+            </a>
+            <a href="/events">
               <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 EVENTS
               </li>
+            </a>
+            <a href="/about">
               <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ABOUT
               </li>
+            </a>
+            <a href="/contacts">
               <li className="p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 CONTACT US
               </li>
-              <li className="w-full">
-                <button className="bg-[#E2012D] w-[75%] p-12 text-white font-bold py-1.5 px-7 w-38 mx-auto my-12 flex justify-center rounded-tr-3xl transition-all duration-300 ease-in-out hover:shadow-md hover:ring-4 hover:ring-red-700 hover:bg-white hover:text-red-700 focus:outline-none focus:ring-4 focus:ring-red-700 focus:bg-red-600">
-                  LOGIN<span>
-                    <MdDoubleArrow />
-                  </span>
-                </button>
-              </li>
-
-         
+            </a>
+            <button className="bg-[#E2012D] text-white py-2 lg:py-3 px-12 w-80 mt-12 flex justify-between items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-2xl lg:text-3xl uppercase tracking-widest">
+              LOGIN &nbsp; &nbsp; <MdDoubleArrow />{" "}
+            </button>
           </ul>
         </div>
       )}
     </header>
   );
 };
-
 
 export default NavBar;
