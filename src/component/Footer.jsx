@@ -42,7 +42,6 @@ const Footer = () => {
         <FaDribbbleSquare size={30} />
     </div>
 </div>
-
                 <div className="lg:col-span flex flex-col lg:flex-row justify-between mt-6">
                     <div className="mb-6 lg:mb-0">
                         <h1 className="font-bold text-white font-oswald">QUICK <span className='text-[#E2102d]'>LINKS</span></h1>

@@ -17,8 +17,6 @@ const NavBar = () => {
       <div className="container mx-auto flex justify-between mr-10 items-center">
         {/* Logo */}
         <div className="ml-[50px] text-2xl font-bold"><img src="src/assets/c_a_c__2_-removebg-preview.png" alt="" className='w-[30%] h-[10%px]'/></div>
-
-        {/* Menu items for laptop/desktop */}
         <div>
         <ul className="hidden md:flex items-center space-x-12">
           <a href=""><li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Home</li></a>
