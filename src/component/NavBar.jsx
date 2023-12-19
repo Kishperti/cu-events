@@ -16,7 +16,7 @@ const NavBar = () => {
     <header className="bg-black text-white p-4 ">
       <div className="container mx-auto flex justify-between mr-10 items-center">
         {/* Logo */}
-        <div className=" ml-[90px] text-2xl font-bold">CAC.</div>
+        <div className="ml-[50px] text-2xl font-bold"><img src="src/assets/c_a_c__2_-removebg-preview.png" alt="" className='w-[30%] h-[10%px]'/></div>
 
         {/* Menu items for laptop/desktop */}
         <div>
@@ -26,7 +26,7 @@ const NavBar = () => {
           <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Events</li>
           <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Partners</li>
           <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">About</li>
-          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contact Us</li>
+          <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contacts</li>
         </ul>
       </div>
 
