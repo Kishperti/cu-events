@@ -11,8 +11,8 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center h-25 max-w-[1240px] mx-auto my-2 px-5 text-white">
-        <div><h1 className="text-3xl font-bold text-[#df0000] my--2">CAC.</h1></div>
+    <div className="flex justify-between items-center h-25  mx-auto px-5 bg-black w-full text-white">
+        <div><h1 className="text-3xl font-bold text-[#df0000] ml-10"><img src="src/assets/CAC-removebg-preview.png" alt=""className=' w-[140px] h-[120px]' /></h1></div>
       <div>
       <ul className="hidden md:flex items-center space-x-12">
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Home</li>
@@ -23,7 +23,7 @@ const Navbar = () => {
         <li className="p-4 hover:text-[#df0000] transition duration-300 ease-in-out cursor-pointer">Contact Us</li>
       </ul>
       </div>
-      <div className="w-45"><button className="bg-[#E2012D] text-white py-1.5 px-7  w-40 mx-auto my-4 flex justify-center rounded-tr-full hover:bg-red-800 transition-all duration-300 ease-in-out cursor-pointer shadow-red-00">Log In  <br /> <FaLongArrowAltRight /> </button></div>
+      <div className="w-45 mr-10"><button className="bg-[#E2012D] text-white py-1.5 px-7  w-40 mx-auto my-4 flex justify-center rounded-tr-full hover:bg-red-800 transition-all duration-300 ease-in-out cursor-pointer shadow-red-700">Log In  <br /> <FaLongArrowAltRight /> </button></div>
       <div onClick={handleNav} className="block md:hidden z-50">
         {nav ? <AiOutlineClose size={20} /> : <AiOutlineMenu size={20} />}
       </div>
