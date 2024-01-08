@@ -38,7 +38,7 @@ const NavBar = () => {
                 href="/achievements"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
-                Achievements
+                About
               </a>
             </li>
             <li>
@@ -54,7 +54,7 @@ const NavBar = () => {
                 href="/partners"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
-                Partners
+                Achievers
               </a>
             </li>
             <li>
@@ -62,7 +62,7 @@ const NavBar = () => {
                 href="/about"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
-                About
+                Contact
               </a>
             </li>
             <li>
@@ -104,7 +104,7 @@ const NavBar = () => {
             </a>
             <a href="/achievements">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
-                ACHIEVEMENTS
+                ABOUT
               </li>
             </a>
             <a href="/events">
@@ -114,7 +114,7 @@ const NavBar = () => {
             </a>
             <a href="/about">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
-                ABOUT
+                ACHIEVERS
               </li>
             </a>
             <a href="/contacts">
