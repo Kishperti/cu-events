@@ -79,7 +79,7 @@ const NavBar = () => {
         {/* Login button for laptop/desktop */}
         <a href="">
           <button className="w-[145px] justify-center font-bold hidden md:block bg-[#E2012D] text-white text-center cursor-pointer transition-all duration-300 ease-in-out px-4 py-2 rounded hover:bg-white hover:text-red-600 rounded-tr-full">
-            Login
+          Reimbursement
           </button>
         </a>
 
@@ -123,7 +123,7 @@ const NavBar = () => {
               </li>
             </a>
             <button className="bg-[#E2012D] text-white py-2 lg:py-3 px-12 w-80 mt-12 flex justify-between items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-2xl lg:text-3xl uppercase tracking-widest">
-              LOGIN &nbsp; &nbsp; <MdDoubleArrow />{" "}
+            REIMBURSEMENT &nbsp; &nbsp; <MdDoubleArrow />{" "}
             </button>
           </ul>
         </div>
