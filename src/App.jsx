@@ -16,8 +16,8 @@ const App = () => {
       <NavBar />
       <Landing />
       <About />
-      <Achievements />
       <Events />
+      <Achievements />
       <Partner />
       <Footer />
     </div>
