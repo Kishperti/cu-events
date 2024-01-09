@@ -1,17 +1,18 @@
 import React from "react";
 import about from "../assets/about.png";
+import tri from "../assets/tri.png";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className=" w-full container h-full mx-auto p-12 bg-[#091022] text-white font-maven">
-      <div className="flex flex-col-reverse lg:flex-col">
-        <h1 className="text-[2rem] lg:text-4xl font-oswald font-bold -mt-2 lg:mt-5 text-white"> <span className="text-[#E2012D]">CHECKOUT</span> ABOUT US</h1>
-        <h6 className="ml-1 font-maven">WHO WE ARE!</h6>
-      </div>
-      <div className="flex flex-row items-center justify-center w-full relative mt-12 h-full">
-        <img src={about} alt="" className="h-[90vh] w-1/2"/>
+    <div className=" w-full container h-full mx-auto pt-16 pb-20 bg-[#091022] text-white font-maven relative">
+      <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
+      <h1 className='text-[#dddddd] text-6xl font-bold text-cente font-oswald text-center mb-4'>ABOUT <span className='text-[#E2012D]'>CAC</span></h1>
+      <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
+      <div className="flex flex-row items-center justify-center w-full relative mt-20 h-full">
+        <img src={about} alt="" className="h-[90vh] w-1/2" />
         <div className="grid place-items-center px-8 rounded-lg w-[60%] -ml-[20%] bg-[#000000d4]">
-          <p className="text-lg lg:text-xl py-8 text-justify w-full px-7 leading-8 lg:px-12 text-white font-maven z-20">
+          <p className="text-lg lg:text-xl py-8 text-justify w-full px-7 leading-8 lg:px-12 text-white opacity-80 font-maven z-20">
             Chandigarh University Academic Competitions, where innovation converges with education to create an unparalleled academic spectacle. Our team is a dynamic collective of visionaries, strategists, and go-getters who are dedicated to orchestrate events that transcend conventional boundaries. We are an ensemble of dedicated professionals, passionate about creating transformative experiences through hackathons, workshops, and various academic events
             <br />
             <br />
