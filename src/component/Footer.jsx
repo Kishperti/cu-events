@@ -33,7 +33,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#091022] lg:mt-[12%]">
-        <div className="w-full px-3 mx-auto mt-60 lg:mt-0 py-12 pt-24 flex flex-col lg:px-16 lg:flex-row gap-4 text-gray-300">
+        <div className="w-full px-3 mx-auto mt-60 lg:mt-0 py-12 pt-24 flex flex-col lg:flex-row gap-4 text-gray-300">
           <div className="w-full lg:w-[60%]">
             <h1 className="w-full text-3xl text-[#E2012D]">
               <img

@@ -10,7 +10,7 @@ import 'swiper/css/pagination';
 import achivBox from "../assets/achiv-box1.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaTimes } from 'react-icons/fa';
- 
+
 const ModuleBox = ({ onClose }) => {
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#060414de] shadow-lg shadow-[#ffffff17] z-20 grid place-items-center w-[90%] h-[95%] lg:h-[90%]">
