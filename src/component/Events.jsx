@@ -48,7 +48,7 @@ export default function Events() {
   };
   return (
     <>
-      <div className="h-full w-full bg-[#dddddd] pt-16 relative">
+      <div className="h-full w-full bg-[#dddddd] py-16 relative">
         <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
         <h1 className='text-[#091022] text-6xl font-bold font-oswald text-center mb-4'>ONGOING <span className='text-[#E2012D]'>EVENTS</span></h1>
         <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>

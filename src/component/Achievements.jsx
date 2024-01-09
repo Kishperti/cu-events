@@ -194,6 +194,7 @@ export default function Achievements() {
           </Swiper>
         </div>
         {isBoxOpen && <ModuleBox onClose={closeBox}  {...boxData[currentIndex]} />}
+        
       </div>
       )}
     </>
