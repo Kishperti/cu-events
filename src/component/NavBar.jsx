@@ -23,7 +23,7 @@ const NavBar = () => {
             />
           </a>
         </div>
-        <div className="hidden md:flex items-center mr-[20%]">
+        <div className="hidden lg:flex items-center mr-[20%]">
           <ul className="flex ">
             <li>
               <a
@@ -78,13 +78,13 @@ const NavBar = () => {
 
         {/* Login button for laptop/desktop */}
         <a href="">
-          <button className="w-[145px] justify-center font-bold hidden md:block bg-[#E2012D] text-white text-center cursor-pointer transition-all duration-300 ease-in-out px-4 py-2 rounded hover:bg-white hover:text-red-600 rounded-tr-full">
+          <button className="w-[145px] justify-center font-bold hidden lg:block bg-[#E2012D] text-white text-center cursor-pointer transition-all duration-300 ease-in-out px-4 py-2 rounded hover:bg-white hover:text-red-600 rounded-tr-full">
           Reimbursement
           </button>
         </a>
 
         {/* Mobile navigation button */}
-        <button className="md:hidden" onClick={toggleMobileMenu}>
+        <button className="lg:hidden" onClick={toggleMobileMenu}>
           {isMobileMenuOpen ? (
             <AiOutlineClose size={20} className="" />
           ) : (
@@ -95,7 +95,7 @@ const NavBar = () => {
 
       {/* Mobile navigation menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden bg-black p-4 space-y-4 text-xl mt-3 hover: text-white hover:transition-opacity duration-500 ease-in-out border-b border-white hover:border-red-700">
+        <div className="lg:hidden bg-black p-4 space-y-4 text-xl mt-3 hover: text-white hover:transition-opacity duration-500 ease-in-out border-b border-white hover:border-red-700">
           <ul>
             <a href="/">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-whit border-l-8 hover:border-red-700">
