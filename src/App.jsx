@@ -7,6 +7,7 @@ import Landing from "./component/Landing";
 import Achievements from "./component/Achievements";
 import Partner from "./component/Partner";
 import axios from "axios";
+import Stats from "./component/Stats";
 
 const App = () => {
  
@@ -15,6 +16,7 @@ const App = () => {
     <div className="bg-white">
       <NavBar />
       <Landing />
+      <Stats/>
       <About />
       <Events />
       <Achievements />
