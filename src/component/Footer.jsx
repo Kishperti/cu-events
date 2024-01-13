@@ -19,15 +19,15 @@ const Footer = () => {
     <div id={"contact"}  className="relative w-full">
       <div className="flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#E2012D] py-7 font-extrabold font-maven text-white -translate-y-3/4 left-[50%] -translate-x-1/2 min-h-[140px] justify-between lg:px-12 lg:items-center px-2">
         <div className="">
-          <p className="text-3xl font-oswald">MORE THAN 10K MEMBERS</p>
-          <p className="text-3xl font-oswald mt-3 text-[#091022]">JOIN OUR GUILD!</p>
+          <p className="text-3xl font-oswald">MORE THAN 50 MEMBERS</p>
+          <p className="text-3xl font-oswald mt-3 text-[#091022]">VISIT OUR GUILD!</p>
         </div>
         <div>
           <a href="/team"
             type="submit"
             className="bg-[#091022] flex items-center justify-evenly text-white py-2 mt-3 rounded-tr-full w-[150px] hover:bg-[#121f2e]"
           >
-            JOIN US
+            View Team
             <FaLongArrowAltRight />
           </a>
         </div>
@@ -43,7 +43,7 @@ const Footer = () => {
               />
             </h1>
             <p className="text-white text-[15px] font-maven mt-4 text-justify lg:mr-12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ad nihil expedita omnis inventore velit dolores debitis, architecto ratione mollitia saepe doloribus accusantium id
+            Welcome to CAC, the pulse of academic vibrancy at Chandigarh University. We're dedicated to inspiring and empowering through diverse academic competitions, hackathons, and workshops.
             </p>
             <div className="flex cursor-pointer my-8">
               <a href="https://www.youtube.com/@CAC-Podcast"><FaYoutube size={30} className="mr-4" /></a>
