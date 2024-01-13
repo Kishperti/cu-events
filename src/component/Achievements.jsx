@@ -13,7 +13,7 @@ import { FaTimes } from 'react-icons/fa';
 import axios from "axios";
 const ModuleBox = ({ onClose, title, description, imageUrl }) => {
   return (
-    <div id={"achievements"}  className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#060414de] shadow-lg shadow-[#ffffff17] z-20 grid place-items-center w-[90%] h-[95%] lg:h-[90%]">
+    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#060414de] shadow-lg shadow-[#ffffff17] z-20 grid place-items-center w-[90%] h-[95%] lg:h-[90%]">
       <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between px-7 py-7 lg:px-28">
         <button
           onClick={onClose}
@@ -82,7 +82,7 @@ export default function Achievements() {
       {loading ? (
         <div>Loading...</div>
       ) : (
-        <div className="h-full w-full bg-[#091022] pt-16 relative">
+        <div id={"achievements"}  className="h-full w-full bg-[#091022] pt-16 relative">
           <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
           <h1 className='text-[#dddddd] text-6xl font-bold text-cente font-oswald text-center mb-4'>OUR <span className='text-[#E2012D]'>FEATS</span></h1>
           <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>

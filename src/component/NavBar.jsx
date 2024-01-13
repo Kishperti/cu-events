@@ -43,7 +43,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/events"
+                href="#events"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Events
@@ -51,7 +51,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/partners"
+                href="#achievements"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Achievers
@@ -59,15 +59,15 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/about"
+                href="#partner"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
-                Contact
+                Partners
               </a>
             </li>
             <li>
               <a
-                href="/contacts"
+                href="#contact"
                 className="p-4 font-maven uppercase transition-all hover:text-[#df0000] cursor-pointer"
               >
                 Contacts
@@ -102,22 +102,22 @@ const NavBar = () => {
                 HOME
               </li>
             </a>
-            <a href="/achievements">
+            <a href="#about">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ABOUT
               </li>
             </a>
-            <a href="/events">
+            <a href="#events">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 EVENTS
               </li>
             </a>
-            <a href="/about">
+            <a href="#achievements">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ACHIEVERS
               </li>
             </a>
-            <a href="/contacts">
+            <a href="#contact">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 CONTACT US
               </li>
