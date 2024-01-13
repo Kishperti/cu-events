@@ -58,13 +58,13 @@ const Footer = () => {
             <h1 className="font-bold text-white text-xl my-2 font-oswald">
               QUICK <span className="text-[#E2102d]">LINKS</span>
             </h1>
-            <ul className="font-maven cursor-pointer">
+            <div className="font-maven cursor-pointer flex flex-col">
               <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
               <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
               <a href="#events" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
               <a href="#achievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
               <a href="#partners" className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</a>
-            </ul>
+            </div>
           </div>
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
             <h2 className="font-bold text-white font-oswald text-xl my-2">CONTACT</h2>
