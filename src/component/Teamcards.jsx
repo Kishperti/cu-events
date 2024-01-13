@@ -39,7 +39,7 @@ const GlassCardGrid = () => {
     {
       id: 1,
       title: "Card 1",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -52,7 +52,7 @@ const GlassCardGrid = () => {
     {
       id: 2,
       title: "Card 2",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -65,7 +65,7 @@ const GlassCardGrid = () => {
     {
       id: 3,
       title: "Card 3",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -78,7 +78,7 @@ const GlassCardGrid = () => {
     {
       id: 4,
       title: "Card 4",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -91,7 +91,7 @@ const GlassCardGrid = () => {
     {
       id: 5,
       title: "Card 5",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -104,7 +104,7 @@ const GlassCardGrid = () => {
     {
       id: 6,
       title: "Card 6",
-      image: "src/assets/image1.jpg",
+      image: "../assets/image1.jpg",
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
