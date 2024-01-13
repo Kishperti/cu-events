@@ -44,9 +44,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     {
@@ -57,9 +57,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     {
@@ -70,9 +70,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     {
@@ -83,9 +83,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     {
@@ -96,9 +96,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     {
@@ -109,9 +109,9 @@ const GlassCardGrid = () => {
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
-        twitter: "https://twitter.com/aryansingh",
-        linkedin: "https://www.linkedin.com/in/aryansingh",
-        instagram: "https://www.instagram.com/aryansingh",
+        twitter: "https://twitter.com",
+        linkedin: "https://www.linkedin.com/in",
+        instagram: "https://www.instagram.com",
       },
     },
     // Add similar entries for other cards
