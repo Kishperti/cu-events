@@ -12,15 +12,13 @@ export default function Home() {
     return (
         <div className="bg-white">
             <NavBar/>
-            <Landing />
-            <Stats />
-            <About  
-                id="about"
-            />
-            <Events />
-            <Achievements />
-            <Partner />
-            <Footer />
+            <Landing id="home"/>
+            <Stats id="stats"/>
+            <About id="about"/>
+            <Events id="events"/>
+            <Achievements id="achievements"/>
+            <Partner id="partner"/>
+            <Footer id="contact"/>
         </div>
     )
 }
