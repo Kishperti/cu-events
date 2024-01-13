@@ -9,6 +9,7 @@ import Partner from "./component/Partner";
 import axios from "axios";
 import Stats from "./component/Stats";
 import Teampage from "./component/Teampage";
+import Teamcards from "./component/Teamcards";
 
 const App = () => {
  
@@ -24,6 +25,7 @@ const App = () => {
       <Partner />
       <Footer />
       <Teampage/>
+      <Teamcards/>
     </div>
   );
 };
