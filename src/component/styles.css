@@ -1,41 +1,55 @@
 #app {
-    height: 100%;
-  }
-  html,
-  body {
-    position: relative;
-    height: 100%;
-  }
-  
-  body {
-    background: #eee;
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-    font-size: 14px;
-    color: #000;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .swiper {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-  }
-  .swiper-button-next, .swiper-button-prev { 
-    color: #E2012D !important;
-  }
-  .swiper-pagination-bullet{
-    background-color: #E2012D !important;
+  height: 100%;
 }
-.team{
+
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #E2012D !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: #E2012D !important;
+}
+
+.team {
   background-image: url("src/assets/bgteam.png");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
+}
+
+.teamcard {
+  background-color: #0E0D0D;
+  opacity: 1;
+  background: radial-gradient(circle, transparent 20%, #0E0D0D 20%, #0E0D0D 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #0E0D0D 20%, #0E0D0D 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#dc26261b 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #dc26261b 8px, #0E0D0D 8px) -4px 0;
+  background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
+}
+.overlay{
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(70, 1, 1, 0.71));
 }
