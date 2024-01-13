@@ -3,7 +3,7 @@ import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   return (
-    <div className="group relative bg-[#df0000] rounded-lg shadow-lg p-6 m-4 transition-transform transform hover:-rotate-6 hover:scale-105 cursor-pointer w-[250px] h-[250px] ">
+    <div className="group relative rounded-lg shadow-lg p-6 transition-transform transform hover:-rotate-6 hover:scale-105 cursor-pointer w-[250px] h-[250px] ">
       <img
         src={image}
         alt={title}
@@ -118,7 +118,7 @@ const GlassCardGrid = () => {
   ];
 
   return (
-    <div className="grid grid-cols-4 px-32 pb-32 z-20 place-items-center w-[95%] -mt-32">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-4 px-32 pb-32 z-20 place-items-center w-full lg:w-[95%] -mt-16 md:-mt-28 lg:-mt-32">
       {cardData.map((card) => (
         <GlassCard key={card.id} {...card} />
       ))}
