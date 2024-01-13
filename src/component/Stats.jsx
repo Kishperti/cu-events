@@ -16,6 +16,7 @@ export default function Stats() {
         setCountFunction(currentCount);
         if (currentCount >= finalCount) {
           clearInterval(intervalId);
+          setCountFunction(finalCount);
         }
       }, 0);
     }

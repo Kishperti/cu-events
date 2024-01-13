@@ -23,13 +23,13 @@ const Footer = () => {
           <p className="text-3xl font-oswald mt-3 text-[#091022]">JOIN OUR GUILD!</p>
         </div>
         <div>
-          <button
+          <a href="/team"
             type="submit"
             className="bg-[#091022] flex items-center justify-evenly text-white py-2 mt-3 rounded-tr-full w-[150px] hover:bg-[#121f2e]"
           >
             JOIN US
             <FaLongArrowAltRight />
-          </button>
+          </a>
         </div>
       </div>
       <div className="bg-[#091022] lg:mt-[12%]">
