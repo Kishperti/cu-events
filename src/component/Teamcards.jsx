@@ -1,5 +1,6 @@
 import React from "react";
 import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
+import img from '../assets/image1.jpg'
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   return (
@@ -39,7 +40,7 @@ const GlassCardGrid = () => {
     {
       id: 1,
       title: "Card 1",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -52,7 +53,7 @@ const GlassCardGrid = () => {
     {
       id: 2,
       title: "Card 2",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -65,7 +66,7 @@ const GlassCardGrid = () => {
     {
       id: 3,
       title: "Card 3",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -78,7 +79,7 @@ const GlassCardGrid = () => {
     {
       id: 4,
       title: "Card 4",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -91,7 +92,7 @@ const GlassCardGrid = () => {
     {
       id: 5,
       title: "Card 5",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
@@ -104,7 +105,7 @@ const GlassCardGrid = () => {
     {
       id: 6,
       title: "Card 6",
-      image: "../assets/image1.jpg",
+      image: img,
       name: "John Doe",
       details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
