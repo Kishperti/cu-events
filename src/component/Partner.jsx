@@ -8,7 +8,7 @@ import logo from "../assets/logo.png";
 export default function Partner() {
   return (
     <>
-      <div className="hidden lg:block w-full px-20 py-16 bg-[#E2012D]">
+      <div id={"partner"}  className="hidden lg:block w-full px-20 py-16 bg-[#E2012D]">
         <Swiper
           slidesPerView={7}
           spaceBetween={50}
