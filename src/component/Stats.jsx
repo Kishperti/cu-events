@@ -23,7 +23,7 @@ export default function Stats() {
   };
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-10 w-full py-[50px] px-[20px] bg-[#0e0d0d]">
+    <div id={"stats"}  className="grid grid-cols-2 lg:grid-cols-4 gap-10 w-full py-[50px] px-[20px] bg-[#0e0d0d]">
       <VisibilitySensor
         onChange={(isVisible) => startCounting(isVisible, setCount1, 10000,)}
         partialVisibility
