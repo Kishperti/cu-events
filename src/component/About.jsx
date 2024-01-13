@@ -5,7 +5,7 @@ import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 
 const About = () => {
   return (
-    <div className=" w-full container h-full mx-auto pt-16 pb-20 bg-[#091022] text-white font-maven relative">
+    <div id={"about"} className=" w-full container h-full mx-auto pt-16 pb-20 bg-[#091022] text-white font-maven relative">
       <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
       <h1 className='text-[#dddddd] text-6xl font-bold text-cente font-oswald text-center mb-4'>ABOUT <span className='text-[#E2012D]'>CAC</span></h1>
       <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>

@@ -35,7 +35,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="/achievements"
+                href="#about"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 About

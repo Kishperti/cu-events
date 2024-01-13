@@ -14,7 +14,9 @@ export default function Home() {
             <NavBar/>
             <Landing />
             <Stats />
-            <About />
+            <About  
+                id="about"
+            />
             <Events />
             <Achievements />
             <Partner />
