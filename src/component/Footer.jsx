@@ -58,7 +58,7 @@ const Footer = () => {
             <h1 className="font-bold text-white text-xl my-2 font-oswald">
               QUICK <span className="text-[#E2102d]">LINKS</span>
             </h1>
-            <div className="font-maven cursor-pointer flex flex-col">
+            <div className="font-maven cursor-pointer flex flex-col justify-start items-start">
               <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
               <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
               <a href="#events" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
