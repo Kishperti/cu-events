@@ -28,7 +28,7 @@ export default function Stats() {
         partialVisibility
       >
         <div className="flex flex-col w-full items-center justify-center">
-          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count1}</h1>
+          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count1}+</h1>
           <div className="text-base md:text-2xl font-light text-white font-maven w-full mt-4 text-center">
             Total Participation
           </div>
@@ -39,7 +39,7 @@ export default function Stats() {
         partialVisibility
       >
         <div className="flex flex-col w-full items-center justify-center">
-          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count2}</h1>
+          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count2}+</h1>
           <div className="text-base md:text-2xl font-light text-white font-maven w-full mt-4 text-center">
             Achievements
           </div>
@@ -50,7 +50,7 @@ export default function Stats() {
         partialVisibility
       >
         <div className="flex flex-col w-full items-center justify-center">
-          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count3}</h1>
+          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count3}+</h1>
           <div className="text-base md:text-2xl font-light text-white font-maven w-full mt-4 text-center">
             National Participation
           </div>
@@ -61,7 +61,7 @@ export default function Stats() {
         partialVisibility
       >
         <div className="flex flex-col w-full items-center justify-center">
-          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count4}</h1>
+          <h1 className="text-xl md:text-5xl font-medium text-[#E2012D] font-oswald">{count4}+</h1>
           <div className="text-base md:text-2xl font-light text-white font-maven w-full mt-4 text-center">
             International Participation
           </div>
