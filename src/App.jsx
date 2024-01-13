@@ -8,6 +8,7 @@ import Achievements from "./component/Achievements";
 import Partner from "./component/Partner";
 import axios from "axios";
 import Stats from "./component/Stats";
+import Teampage from "./component/Teampage";
 
 const App = () => {
  
@@ -22,6 +23,7 @@ const App = () => {
       <Achievements />
       <Partner />
       <Footer />
+      <Teampage/>
     </div>
   );
 };
