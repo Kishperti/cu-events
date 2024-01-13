@@ -5,6 +5,7 @@ import { IoMail } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocation } from "react-icons/io5";
 import footerlogo from "../assets/logonav.png";
+import { Link } from "react-router-dom";
 import {
   FaDribbbleSquare,
   FaFacebookSquare,
@@ -23,13 +24,13 @@ const Footer = () => {
           <p className="text-3xl font-oswald mt-3 text-[#091022]">VISIT OUR GUILD!</p>
         </div>
         <div>
-          <a href="/team"
+          <Link to="/team"
             type="submit"
             className="bg-[#091022] flex items-center justify-evenly text-white py-2 mt-3 rounded-tr-full w-[150px] hover:bg-[#121f2e]"
           >
             View Team
             <FaLongArrowAltRight />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="bg-[#091022] lg:mt-[12%]">
