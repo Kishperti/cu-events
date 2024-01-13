@@ -3,26 +3,29 @@ import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   return (
-    <div className="group relative overflow-hidden bg-[#df0000] rounded-lg shadow-lg p-6 m-4 transition-transform transform hover:scale-105 hover:rotate-6 w-[250px] h-[250px] ">
+    <div className="group relative bg-[#df0000] rounded-lg shadow-lg p-6 m-4 transition-transform transform hover:-rotate-6 hover:scale-105 cursor-pointer w-[250px] h-[250px] ">
       <img
         src={image}
         alt={title}
-        className="w-full h-[75%] object-cover object-center rounded-md mb-4 group-hover:opacity-100 absolute inset-0"
+        className="w-full h-full object-cover object-center rounded-md mb-4 group-hover:opacity-100 absolute inset-0"
       />
-      <h3 className="text-white text-lg font-semibold mt-50 z-50">{name}</h3>
-      <p className="text-white opacity-80 text-sm">{details}</p>
-      <div className="opacity-0 group-hover:opacity-100 absolute inset-0 bg-white bg-opacity-25 backdrop-blur-md rounded-lg p-6 transition-opacity flex flex-col justify-center font-maven">
-        <p className="text-white text-sm mb-2 ml-4">{details}</p>
-        <p className="text-white text-sm mb-2 ml-4">{name}</p>
-        <p className="text-white text-sm mb-2 ml-4">{designation}</p>
-        <div className="flex space-x-2">
-          <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-white ml-4">
+      <div className="bg-[#091022a9] w-full absolute bottom-0 left-0 z-20 p-2">
+
+        <h3 className="text-white opacity-70 text-lg font-semibold z-50">{name}</h3>
+        <p className="text-white opacity-80 text-sm">{designation}</p>
+      </div>
+      <div className="opacity-0 group-hover:opacity-100 group-hover:rotate-6 absolute inset-0 bg-[#091022] bg-opacity-25 z-50 backdrop-blur-md rounded-lg p-6 transition-opacity flex flex-col justify-center font-maven">
+        <p className="text-white font-oswald text-lg">{name}</p>
+        <p className="text-white uppercase text-xs mb-2">{designation}</p>
+        <p className="text-white text-sm mb-2">{details}</p>
+        <div className="flex mt-2">
+          <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaTwitter />
           </a>
-          <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-white ml-4">
+          <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaLinkedin />
           </a>
-          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white ml-4">
+          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaInstagram />
           </a>
         </div>
@@ -36,9 +39,9 @@ const GlassCardGrid = () => {
     {
       id: 1,
       title: "Card 1",
-    //   details: "Details for Card 1",
       image: "src/assets/image1.jpg",
-      name: "ARYANN SINGH",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
         twitter: "https://twitter.com/aryansingh",
@@ -49,9 +52,9 @@ const GlassCardGrid = () => {
     {
       id: 2,
       title: "Card 2",
-    //   details: "Details for Card 1",
       image: "src/assets/image1.jpg",
-      name: "ARYANN SINGH",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
         twitter: "https://twitter.com/aryansingh",
@@ -62,9 +65,9 @@ const GlassCardGrid = () => {
     {
       id: 3,
       title: "Card 3",
-    //   details: "Details for Card 1",
       image: "src/assets/image1.jpg",
-      name: "ARYANN SINGH",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
         twitter: "https://twitter.com/aryansingh",
@@ -75,9 +78,35 @@ const GlassCardGrid = () => {
     {
       id: 4,
       title: "Card 4",
-    //   details: "Details for Card 1",
       image: "src/assets/image1.jpg",
-      name: "ARYANN SINGH",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      designation: "Front End Developer",
+      socialLinks: {
+        twitter: "https://twitter.com/aryansingh",
+        linkedin: "https://www.linkedin.com/in/aryansingh",
+        instagram: "https://www.instagram.com/aryansingh",
+      },
+    },
+    {
+      id: 5,
+      title: "Card 5",
+      image: "src/assets/image1.jpg",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
+      designation: "Front End Developer",
+      socialLinks: {
+        twitter: "https://twitter.com/aryansingh",
+        linkedin: "https://www.linkedin.com/in/aryansingh",
+        instagram: "https://www.instagram.com/aryansingh",
+      },
+    },
+    {
+      id: 6,
+      title: "Card 6",
+      image: "src/assets/image1.jpg",
+      name: "John Doe",
+      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
       designation: "Front End Developer",
       socialLinks: {
         twitter: "https://twitter.com/aryansingh",
@@ -89,7 +118,7 @@ const GlassCardGrid = () => {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center">
+    <div className="grid grid-cols-4 px-32 pb-32 z-20 place-items-center w-[95%] -mt-32">
       {cardData.map((card) => (
         <GlassCard key={card.id} {...card} />
       ))}
