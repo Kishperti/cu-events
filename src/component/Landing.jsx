@@ -15,6 +15,7 @@ export default function App() {
     return (
         <>
             <Swiper
+                id={"home"}
                 centeredSlides={true}
                 autoplay={{
                     delay: 2500,

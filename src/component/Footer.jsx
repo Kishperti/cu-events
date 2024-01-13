@@ -59,11 +59,11 @@ const Footer = () => {
               QUICK <span className="text-[#E2102d]">LINKS</span>
             </h1>
             <ul className="font-maven cursor-pointer">
-              <li className="py-2 text-sm hover:text-[#E2012D]">HOME</li>
-              <li className="py-2 text-sm hover:text-[#E2012D]">NEWS</li>
-              <li className="py-2 text-sm hover:text-[#E2012D]">EVENTS</li>
-              <li className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</li>
-              <li className="py-2 text-sm hover:text-[#E2012D]">ACHIEVEMENTS</li>
+              <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
+              <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
+              <a href="#events" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
+              <a href="#achievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
+              <a href="#partners" className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</a>
             </ul>
           </div>
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
