@@ -34,6 +34,10 @@ const eventSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  backgroundBanner: {
+    type: [[String]],
+    required: true,
+  },
 });
 
 const ongoingEventModel = mongoose.model("ongoingEvents", eventSchema);

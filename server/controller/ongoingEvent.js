@@ -69,24 +69,44 @@ exports.createOngoingEvent = async (req, res) => {
       linkEvent,
       registrationEnd,
     } = req.body;
-    const file = req.files.imageUrl;
+
+    // Assuming you have multiple image files with the field name 'backgroundBanner'
+    const files = req.files.backgroundBanner;
+
+    // Validate file types
     const supportedTypes = ["jpg", "jpeg", "png"];
-    const fileType = file.name.split(".")[1].toLowerCase();
-    if (!isFileTypeSupported(fileType, supportedTypes)) {
-      return res.status(400).json({
-        success: false,
-        message: "file format not supported",
-      });
+    for (const file of files) {
+      const fileType = file.name.split(".")[1].toLowerCase();
+      if (!isFileTypeSupported(fileType, supportedTypes)) {
+        return res.status(400).json({
+          success: false,
+          message: `File format not supported for ${file.originalname}`,
+        });
+      }
     }
-    const response = await uploadFileToCloudinary(file, "CAC");
+
+    // Upload all backgroundBanner files to Cloudinary
+    const backgroundBannerUrls = await Promise.all(
+      files.map(async (file) => {
+        const response = await uploadFileToCloudinary(file, "CAC");
+        return response.secure_url;
+      })
+    );
+
+    // Ensure that at least one imageUrl is set (pick the first one from backgroundBanner)
+    const imageUrl =
+      backgroundBannerUrls.length > 0 ? backgroundBannerUrls[0] : null;
+
     const ongoingEventData = await ongomodel.create({
       title,
       description,
       eligibilityCriteria,
       linkEvent,
       registrationEnd,
-      imageUrl: response.secure_url,
+      imageUrl: imageUrl, // Set imageUrl to the first one from backgroundBanner
+      backgroundBanner: backgroundBannerUrls,
     });
+
     res.status(201).json({
       success: true,
       data: ongoingEventData,
@@ -102,77 +122,7 @@ exports.createOngoingEvent = async (req, res) => {
     });
   }
 };
-exports.updateOngoingEventById = async (req, res) => {
-  try {
-    const { userId, role } = req.user;
-    if (role !== "admin") {
-      return res.status(403).json({
-        success: false,
-        message: "Permission denied. Only admins can update ongoing events.",
-      });
-    }
 
-    const { id } = req.params;
-    const {
-      title,
-      description,
-      eligibilityCriteria,
-      linkEvent,
-      registrationEnd,
-    } = req.body;
-    const file = req.files && req.files.imageUrl;
-    let imageUrl;
-    if (file) {
-      const supportedTypes = ["jpg", "jpeg", "png"];
-      const fileType = file.name.split(".")[1].toLowerCase();
-
-      if (!isFileTypeSupported(fileType, supportedTypes)) {
-        return res.status(400).json({
-          success: false,
-          message: "File format not supported",
-        });
-      }
-
-      const response = await uploadFileToCloudinary(file, "CAC");
-      imageUrl = response.secure_url;
-    }
-
-    // Update the event in MongoDB
-    const updatedEvent = await ongomodel.findByIdAndUpdate(
-      { _id: id },
-      {
-        title,
-        description,
-        eligibilityCriteria,
-        linkEvent,
-        registrationEnd,
-        ...(imageUrl && { imageUrl }),
-      },
-      { new: true }
-    );
-
-    if (!updatedEvent) {
-      return res.status(404).json({
-        success: false,
-        message: "Event not found",
-      });
-    }
-
-    res.status(200).json({
-      success: true,
-      data: updatedEvent,
-      message: "Ongoing event updated successfully.",
-    });
-  } catch (err) {
-    console.error("Error in updating ongoing event by ID:", err);
-    res.status(500).json({
-      success: false,
-      data: null,
-      message: "Error in updating ongoing event",
-      error: err.message,
-    });
-  }
-};
 exports.deleteOngoingEvent = async (req, res) => {
   try {
     const { id } = req.params;
