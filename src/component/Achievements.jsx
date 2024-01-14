@@ -67,7 +67,7 @@ export default function Achievements() {
         setBoxData(achievements.data.data.map(item => ({ title: item.title, description: item.description, imageUrl: item.imageUrl })));
         setLoading(false);
 
-        console.log(events.data);
+       
       } catch (error) {
         console.error("Error fetching data:", error);
         setLoading(false);
@@ -143,54 +143,20 @@ export default function Achievements() {
               loop={true}
               className="mySwiper px-16 mt-12"
             >
-              <SwiperSlide>
+               {num.map((title, index) => (
+              <SwiperSlide key={index} >
                 <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
-                  <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
-                  <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
+                  <img src={imgurl[index]} onClick={() => openBox(index)} className="absolute top-0 left-0 object-cover" alt="" />
+                  {/* <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
                     <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
                     <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
                     </div>
                     <button className="bg-[#E2012D] text-white py-2 w-[60%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-base uppercase tracking-widest">Know More<FaLongArrowAltRight /> </button>
-                  </div>
+                  </div> */}
                 </div>
               </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
-                  <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
-                  <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                    <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
-                    <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
-                    </div>
-                    <button className="bg-[#E2012D] text-white py-2 w-[60%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-base uppercase tracking-widest">Know More<FaLongArrowAltRight /> </button>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
-                  <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
-                  <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                    <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
-                    <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
-                    </div>
-                    <button className="bg-[#E2012D] text-white py-2 w-[60%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-base uppercase tracking-widest">Know More<FaLongArrowAltRight /> </button>
-                  </div>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
-                  <img src={achivBox} className="absolute top-0 left-0 object-cover" alt="" />
-                  <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
-                    <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Achievement 1</h1>
-                    <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus.
-                    </div>
-                    <button className="bg-[#E2012D] text-white py-2 w-[60%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-base uppercase tracking-widest">Know More<FaLongArrowAltRight /> </button>
-                  </div>
-                </div>
-              </SwiperSlide>
+               ))}
             </Swiper>
           </div>
           {isBoxOpen && <ModuleBox onClose={closeBox}  {...boxData[currentIndex]} />}
