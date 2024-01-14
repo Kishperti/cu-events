@@ -30,8 +30,8 @@ const ModuleBox = ({ onClose, title, description, imageUrl }) => {
           </p>
           <button className="bg-[#E2012D] text-white py-2 lg:py-3 w-[65%] lg:w-[45%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-xl uppercase tracking-widest">Know More &nbsp; &nbsp; <FaLongArrowAltRight /> </button>
         </div>
-        <div className="w-full h-[180px] mb-2 lg:mb-0 lg:w-[500px] lg:h-[350px] rounded-tl-[80px] overflow-hidden">
-          <img src={imageUrl} alt="" />
+        <div className="w-full h-[180px] mb-2 lg:mb-0 lg:w-[470px] lg:h-[380px] rounded-tl-[80px] overflow-hidden">
+          <img src={imageUrl} className="w-full h-full" alt="" />
         </div>
       </div>
     </div>
