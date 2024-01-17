@@ -32,7 +32,7 @@ export default function App() {
                 </SwiperSlide>
                 <SwiperSlide className='w-full h-full flex flex-col swiper-slide1'>
                     <img className='w-full h-full' src={event3} alt="" />
-                </SwiperSlide>
+                </SwiperSlide> 
             </Swiper>
         </>
     );
