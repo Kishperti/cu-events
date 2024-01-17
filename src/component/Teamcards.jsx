@@ -20,15 +20,15 @@ const GlassCard = ({ image, title, details, name, designation, socialLinks }) =>
         <p className="text-white uppercase text-xs mb-2">{designation}</p>
         <p className="text-white text-sm mb-2">{details}</p>
         <div className="flex mt-2">
-          <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
+          {/* <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaTwitter />
-          </a>
+          </a> */}
           <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaLinkedin />
           </a>
-          <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
+          {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
             <FaInstagram />
-          </a>
+          </a> */}
         </div>
       </div>
     </div>
