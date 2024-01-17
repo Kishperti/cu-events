@@ -3,14 +3,20 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import './styles.css';
 import 'swiper/css';
-import logo from "../assets/logo.png";
+import ieee from "../assets/ieee.png";
+import gfg from "../assets/gfg.png";
+import grownity from "../assets/grownity.png";
+import rotaract from "../assets/rotaract.png";
+import gdsc from "../assets/gdsc.png";
+import alexa from "../assets/alexa.png";
+
 
 export default function Partner() {
   return (
     <>
-      <div id={"partner"}  className="hidden lg:block w-full px-20 py-16 bg-[#E2012D]">
+      <div id={"partner"}  className="hidden lg:block w-full px-20 py-8 bg-[#E2012D]">
         <Swiper
-          slidesPerView={7}
+          slidesPerView={4}
           spaceBetween={50}
           autoplay={{
             delay: 2500,
@@ -20,15 +26,10 @@ export default function Partner() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><img src={'src/assets/GFG CU logo png.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/HackOverFlow.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/Grownity new logo.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/Rotaract logo Updated..png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/LOGO WHITE.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/Copy of GDSC Logo chapter lockup centered template.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={'src/assets/Alexa Logo.png'} className='h-20' alt="1" border="0" /></SwiperSlide>
-          {/* <SwiperSlide><img src={'src/assets/achiv-box1.png'} className='h-20' alt="1" border="0" /></SwiperSlide> */}
-          <SwiperSlide><img src={logo} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={ieee} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gfg} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gdsc} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+         
         </Swiper>
       </div>
       <div className="block lg:hidden w-full px-12 py-8 bg-[#ffffff]">
@@ -43,15 +44,12 @@ export default function Partner() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={logo} className='h-16' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={ieee} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={gfg} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={grownity} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={rotaract} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={gdsc} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide><img src={alexa} className='h-20' alt="1" border="0" /></SwiperSlide>
         </Swiper>
       </div>
     </>
