@@ -123,7 +123,7 @@ export default function Events() {
              {num.map((title, index) => (
             <SwiperSlide key={index}>
               <div className="relative shadow-lg w-[400px] h-[400px] grid place-items-center cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl shadow-[#ffffff17]">
-                <img src={imgurl[index]} onClick={() => openBox(index)}  className="absolute top-0 left-0 object-cover" alt="" />
+                <img src={imgurl[index]} onClick={() => openBox(index)}  className="absolute h-full w-full top-0 left-0 object-cover" alt="" />
                 {/* <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
                   <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">
@@ -157,7 +157,7 @@ export default function Events() {
               {num.map((title, index) => (
             <SwiperSlide>
               <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all skew-x-6 hover:skew-x-0 hover:shadow-2xl shadow-[#ffffff17]">
-                <img src={imgurl[index]} onClick={() => openBox(index)}  className="absolute top-0 left-0 object-cover" alt="" />
+                <img src={imgurl[index]} onClick={() => openBox(index)}  className="absolute h-full w-full top-0 left-0 object-cover" alt="" />
                 {/* <div className="flex flex-col z-20 w-full bg-[#00000081] py-8 px-4">
                   <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>Event 1</h1>
                   <div className="text-base font-light text-white font-maven w-full mt-4 text-justify">

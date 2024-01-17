@@ -9,6 +9,7 @@ import grownity from "../assets/grownity.png";
 import rotaract from "../assets/rotaract.png";
 import gdsc from "../assets/gdsc.png";
 import alexa from "../assets/alexa.png";
+import cu from "../assets/cu.png";
 
 
 export default function Partner() {
@@ -26,15 +27,20 @@ export default function Partner() {
           modules={[Autoplay]}
           className="mySwiper"
         >
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={cu} className='h-full w-full scale-90' alt="1" border="0" /></SwiperSlide>
           <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={ieee} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
           <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gfg} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
           <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gdsc} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={rotaract} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-4 bg-white rounded-md shadow-md grid place-items-center'><img src={alexa} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={grownity} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+
          
         </Swiper>
       </div>
-      <div className="block lg:hidden w-full px-12 py-8 bg-[#ffffff]">
+      <div className="block lg:hidden w-full px-12 py-8 bg-[#E2012D]">
         <Swiper
-          slidesPerView={2}
+          slidesPerView={1}
           spaceBetween={50}
           autoplay={{
             delay: 2500,
@@ -44,12 +50,13 @@ export default function Partner() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide><img src={ieee} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={gfg} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={grownity} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={rotaract} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={gdsc} className='h-20' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide><img src={alexa} className='h-20' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={cu} className='h-full w-full scale-90' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={ieee} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gfg} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={gdsc} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={rotaract} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-4 bg-white rounded-md shadow-md grid place-items-center'><img src={alexa} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center'><img src={grownity} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
         </Swiper>
       </div>
     </>
