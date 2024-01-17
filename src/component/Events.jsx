@@ -11,8 +11,15 @@ import achivBox from "../assets/achiv-box1.png"
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaTimes } from 'react-icons/fa';
 import axios from "axios";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
-const ModuleBox = ({ onClose, title, description, imageUrl }) => {
+const ModuleBox = ({ onClose, title, description, imageUrl,linkEvent }) => {
+  const navigate = useNavigate();
+  const redirectToEvent = () => {
+    // Redirect to the specified linkEvent
+    window.location.href=linkEvent;
+    
+  };
   return (
     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#060414de] shadow-lg shadow-[#ffffff17] z-20 grid place-items-center w-[90%] h-[95%] lg:h-[90%]">
       <div className="flex flex-col-reverse lg:flex-row lg:items-center lg:justify-between px-7 py-7 lg:px-28">
@@ -28,7 +35,7 @@ const ModuleBox = ({ onClose, title, description, imageUrl }) => {
           <p className="text-sm mt-2 lg:mt-0 lg:text-xl lg:py-8 text-justify w-full leading-6 lg:leading-8 font-maven text-white">
             {description}
           </p>
-          <button className="bg-[#E2012D] text-white py-2 lg:py-3 w-[65%] lg:w-[45%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-xl uppercase tracking-widest">Know More &nbsp; &nbsp; <FaLongArrowAltRight /> </button>
+          <button onClick={redirectToEvent} className="bg-[#E2012D] text-white py-2 lg:py-3 w-[65%] lg:w-[45%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-xl uppercase tracking-widest"> Register&nbsp; &nbsp; <FaLongArrowAltRight /> </button>
         </div>
         <div className="w-full h-[180px] mb-2 lg:mb-0 lg:w-[470px] lg:h-[380px] rounded-tl-[80px] overflow-hidden">
           <img src={imageUrl} className="w-full h-full" alt="" />
@@ -37,6 +44,7 @@ const ModuleBox = ({ onClose, title, description, imageUrl }) => {
     </div>
   );
 };
+
 
 export default function Events() {
   const [isBoxOpen, setBoxOpen] = useState(false);
@@ -52,6 +60,7 @@ export default function Events() {
   const [num, setNum] = useState([]);
   const [imgurl, setimgurl] = useState([]);
   const [des, setdes] = useState([]);
+  const [formlink, setformlink] = useState([]);
   const [loading, setLoading] = useState(true);
   const [boxData, setBoxData] = useState({});
   const [currentIndex, setCurrentIndex] = useState(null);
@@ -61,14 +70,21 @@ export default function Events() {
       try {
         const events = await axios.get("http://localhost:3000/cac/v1/getOngoingEvents/all");
         console.log(events.data.data);
-
+        var lastdata;
+        events.data.data.forEach(event => {
+          // console.log(event.backgroundBanner);
+          lastdata=event.backgroundBanner;
+        });
+        console.log(lastdata);
+      
         setNum(events.data.data.map(item => item.title));
         setdes(events.data.data.map(item => item.description));
         setimgurl(events.data.data.map(item => item.imageUrl));
-        setBoxData(events.data.data.map(item => ({ title: item.title, description: item.description, imageUrl: item.imageUrl })));
+        setformlink(events.data.data.map(item => item.linkEvent));
+        setBoxData(events.data.data.map(item => ({ title: item.title, description: item.description, imageUrl: item.imageUrl, linkEvent: item.linkEvent})));
         setLoading(false);
 
-        console.log(events.data);
+       
       } catch (error) {
         console.error("Error fetching data:", error);
         setLoading(false);
@@ -91,17 +107,17 @@ export default function Events() {
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
-            centeredSlides={true}
+            centeredSlides={num.length>3}
             pagination={{
-              clickable: true,
+              clickable: num.length>3,
             }}
-            navigation={true}
+            navigation={num.length>3}
             modules={[Pagination, Navigation, Autoplay]}
             autoplay={{
               delay: 2500,
               disableOnInteraction: false,
             }}
-            loop={true}
+            loop={num.length>3}
             className="mySwiper px-20 mt-12"
           >
              {num.map((title, index) => (
