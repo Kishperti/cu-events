@@ -19,14 +19,12 @@ export default function App() {
         const events = await axios.get(
           "http://localhost:3000/cac/v1/getOngoingEvents/all"
         );
-        console.log(events.data.data);
+     
 
         // Check if there are events
         if (events.data.data.length > 0) {
           // Use the backgroundBanner of the first event
           const firstEventBackgrounds = events.data.data[0].backgroundBanner;
-
-          console.log(firstEventBackgrounds);
           setbackBanner(firstEventBackgrounds);
         }
       } catch (error) {

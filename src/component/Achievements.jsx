@@ -60,7 +60,6 @@ export default function Achievements() {
       try {
         const events = await axios.get("http://localhost:3000/cac/v1/getOngoingEvents/all");
         const achievements = await axios.get("http://localhost:3000/cac/v1/getAchivments/all");
-        console.log(achievements.data.data);
 
         setNum(achievements.data.data.map(item => item.title));
         setdes(achievements.data.data.map(item => item.description));

@@ -69,13 +69,13 @@ export default function Events() {
     const fetchData = async () => {
       try {
         const events = await axios.get("http://localhost:3000/cac/v1/getOngoingEvents/all");
-        console.log(events.data.data);
+       
         var lastdata;
         events.data.data.forEach(event => {
           // console.log(event.backgroundBanner);
           lastdata=event.backgroundBanner;
         });
-        console.log(lastdata);
+       
       
         setNum(events.data.data.map(item => item.title));
         setdes(events.data.data.map(item => item.description));
