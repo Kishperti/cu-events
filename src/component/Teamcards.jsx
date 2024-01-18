@@ -1,8 +1,13 @@
 import React from "react";
-import { FaTwitter, FaLinkedin, FaInstagram } from "react-icons/fa";
-import img from '../assets/image1.jpg'
+import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
+import img from '../assets/image1.jpg';
+import bhavya from '../assets/bhavya.png';
+import bhuvan from '../assets/bhuvan.png';
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
+  const visibleSocialLinks = Object.keys(socialLinks).filter(
+    (link) => socialLinks[link]
+  );
   return (
     <div className="group relative rounded-lg shadow-lg p-6 transition-transform transform hover:-rotate-6 hover:scale-105 cursor-pointer w-[250px] h-[250px] ">
       <img
@@ -20,16 +25,20 @@ const GlassCard = ({ image, title, details, name, designation, socialLinks }) =>
         <p className="text-white uppercase text-xs mb-2">{designation}</p>
         <p className="text-white text-sm mb-2">{details}</p>
         <div className="flex mt-2">
-          {/* <a href={socialLinks.twitter} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
-            <FaTwitter />
-          </a> */}
-          <a href={socialLinks.linkedin} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
-            <FaLinkedin />
+        {visibleSocialLinks.map((link) => (
+          <a
+            key={link}
+            href={socialLinks[link]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white transition-all hover:text-[#DC2626] text-lg mr-4"
+          >
+            {link === "linkedin" && <FaLinkedin />}
+            {link === "instagram" && <FaInstagram />}
+            {link === "github" && <FaGithub />}
           </a>
-          {/* <a href={socialLinks.instagram} target="_blank" rel="noopener noreferrer" className="text-white transition-all hover:text-[#DC2626] text-lg mr-4">
-            <FaInstagram />
-          </a> */}
-        </div>
+        ))}
+      </div>
       </div>
     </div>
   );
@@ -40,40 +49,38 @@ const GlassCardGrid = () => {
     {
       id: 1,
       title: "Card 1",
-      image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      image: bhuvan,
+      name: "Bhuvan Sharma",
+      details: "Hello i am bhuvan i am bouncer professionally",
+      designation: "Development Executive",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "http://www.linkedin.com/in/bhuvan-sharma-a0a470232",
+        instagram: "https://www.instagram.com/sharma_.bhuvan?igsh=MXA5Z2d4YnZqNDZwYQ==",
       },
     },
     {
       id: 2,
       title: "Card 2",
       image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      name: "Anshika",
+      details: "Frontend sorceress weaving digital dreams, introverted melody enthusiast, and moonlit code composer.",
+      designation: "Development Executive",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "https://www.linkedin.com/in/anshika75/",
+        instagram: "https://www.instagram.com/demilune75?igsh=MWoxaWVscXBveGpqeg==",
+        github: "https://github.com/Anshika75",
       },
     },
     {
       id: 3,
       title: "Card 3",
-      image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      image: bhavya,
+      name: "Bhavya",
+      details: "Experienced leader with a track record of fostering team synergy. Contributing to societal betterment through meaningful connections.",
+      designation: "Branding Executive",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "https://www.linkedin.com/in/bhavya-kapoor-580294223/",
+        instagram: "",
       },
     },
     {
