@@ -3,6 +3,12 @@ import { FaTwitter, FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import img from '../assets/image1.jpg';
 import bhavya from '../assets/bhavya.png';
 import bhuvan from '../assets/bhuvan.png';
+import sarthak from '../assets/Sarthak.png';
+import harshit from '../assets/harshit.png';
+import gurdeep from '../assets/Gurdeep.png';
+import atul from '../assets/atul.png';
+import raghav from '../assets/Raghav.png';
+import shivansh from '../assets/Shivansh.png';
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   const visibleSocialLinks = Object.keys(socialLinks).filter(
@@ -56,12 +62,13 @@ const GlassCardGrid = () => {
       socialLinks: {
         linkedin: "http://www.linkedin.com/in/bhuvan-sharma-a0a470232",
         instagram: "https://www.instagram.com/sharma_.bhuvan?igsh=MXA5Z2d4YnZqNDZwYQ==",
+        github: "https://github.com/Bhuvansharma0908",
       },
     },
     {
       id: 2,
       title: "Card 2",
-      image: img,
+      image: anshika,
       name: "Anshika",
       details: "Frontend sorceress weaving digital dreams, introverted melody enthusiast, and moonlit code composer.",
       designation: "Development Executive",
@@ -86,40 +93,76 @@ const GlassCardGrid = () => {
     {
       id: 4,
       title: "Card 4",
-      image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      image: sarthak,
+      name: "Sarthak",
+      details: "Looking forward to bolster Chandigarh University Academic Competitions in making more data driven decisions & Strategy. ",
+      designation: "Data Strategy & Sponsorship Ex.",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "",
+        instagram: "",
       },
     },
     {
       id: 5,
       title: "Card 5",
-      image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      image: harshit,
+      name: "Harshit",
+      details: "Passionate about using data-driven insights to fuel business expansion.",
+      designation: "HR team",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "https://www.instagram.com/harshit_simbal?igsh=MTliM3FrZjA5bnN2ag%3D%3D&utm_source=qr",
+        instagram: "",
       },
     },
     {
       id: 6,
       title: "Card 6",
-      image: img,
-      name: "John Doe",
-      details: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates.",
-      designation: "Front End Developer",
+      image: gurdeep,
+      name: "Gurdeep",
+      details: "",
+      designation: "Media lead",
       socialLinks: {
-        twitter: "https://twitter.com",
-        linkedin: "https://www.linkedin.com/in",
-        instagram: "https://www.instagram.com",
+        linkedin: "",
+        instagram: "",
+      },
+    },
+    {
+      id: 7,
+      title: "Card 7",
+      image: raghav,
+      name: "Raghav",
+      details: "Elevating brands through strategic marketing magic as a results-driven executive.",
+      designation: "Marketing Executive",
+      socialLinks: {
+        linkedin: "https://www.linkedin.com/in/atul-kumar-2a5b1a1b6",
+        instagram: "",
+        github: "",
+      },
+    },
+    {
+      id: 8,
+      title: "Card 7",
+      image: atul,
+      name: "Atul",
+      details: "Enthusiastic tech undergrad, product design innovator, event coordinator of 10+, driven by curiosity and determination.",
+      designation: "HR",
+      socialLinks: {
+        linkedin: "https://www.linkedin.com/in/atul-raj-095322229/",
+        instagram: "https://www.instagram.com/atul_raj_7146/",
+        github: "",
+      },
+    },
+    {
+      id: 8,
+      title: "Card 7",
+      image: shivansh,
+      name: "Shivansh",
+      details: "Thrives on creative problem-solving, leveraging technical skills and imaginative ideas for innovative solutions. Committed to meaningful progress and growth.",
+      designation: "Social Media & Outreach Lead",
+      socialLinks: {
+        linkedin: "https://www.linkedin.com/in/shivansh-tiwari-48894924a/",
+        instagram: "",
+        github: "",
       },
     },
     // Add similar entries for other cards
