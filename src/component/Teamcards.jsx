@@ -9,6 +9,7 @@ import gurdeep from '../assets/Gurdeep.png';
 import atul from '../assets/atul.png';
 import raghav from '../assets/Raghav.png';
 import shivansh from '../assets/Shivansh.png';
+import anshika from '../assets/anshika.png';
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   const visibleSocialLinks = Object.keys(socialLinks).filter(
@@ -153,7 +154,7 @@ const GlassCardGrid = () => {
       },
     },
     {
-      id: 8,
+      id: 9,
       title: "Card 7",
       image: shivansh,
       name: "Shivansh",
