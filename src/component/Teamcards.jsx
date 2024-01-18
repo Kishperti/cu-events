@@ -170,7 +170,7 @@ const GlassCardGrid = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-4 px-32 pb-32 z-20 place-items-center w-full lg:w-[95%] -mt-16 md:-mt-28 lg:-mt-32">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:grid-cols-4 px-32 pb-32 z-20 place-items-center w-full lg:w-[95%] -mt-4 md:-mt-28 lg:-mt-32">
       {cardData.map((card) => (
         <GlassCard key={card.id} {...card} />
       ))}
