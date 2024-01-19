@@ -18,7 +18,7 @@ import {
 const Footer = () => {
   return (
     <div id={"contact"}  className="relative w-full">
-      <div className="flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#E2012D] py-7 font-extrabold font-maven text-white -translate-y-3/4 left-[50%] -translate-x-1/2 min-h-[140px] justify-between lg:px-12 lg:items-center px-2">
+      <div className="flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#E2012D] py-3 font-extrabold font-maven text-white -translate-y-3/4 left-[50%] -translate-x-1/2 min-h-[120px] justify-between lg:px-12 lg:items-center px-2">
         <div className="">
           <p className="text-3xl font-oswald">PASSION IN ACTION</p>
           <p className="text-3xl font-oswald mt-3 text-[#091022]">DISCOVER OUR DYNAMIC TEAM</p>
@@ -35,7 +35,7 @@ const Footer = () => {
       </div>
       <div className="bg-[#091022] lg:mt-[12%]">
         <div className="w-full px-3 mx-auto mt-60 lg:mt-0 py-12 pt-24 flex flex-col lg:flex-row gap-4 text-gray-300">
-          <div className="w-full lg:w-[60%]">
+          <div className="w-full lg:pl-8 lg:w-[60%]">
             <h1 className="w-full text-3xl text-[#E2012D]">
               <img
                 src={footerlogo}

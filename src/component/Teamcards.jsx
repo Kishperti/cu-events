@@ -10,7 +10,7 @@ import atul from '../assets/atul.png';
 import raghav from '../assets/Raghav.png';
 import shivansh from '../assets/Shivansh.png';
 import anshika from '../assets/anshika.png';
-import manas from '../assets/Manas.png';
+import aryan from '../assets/aryann.png';
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   const visibleSocialLinks = Object.keys(socialLinks).filter(
@@ -128,19 +128,19 @@ const GlassCardGrid = () => {
         instagram: "",
       },
     },
-    {
-      id: 7,
-      title: "Card 7",
-      image: raghav,
-      name: "Raghav",
-      details: "Elevating brands through strategic marketing magic as a results-driven executive.",
-      designation: "Marketing Executive",
-      socialLinks: {
-        linkedin: "https://www.linkedin.com/in/atul-kumar-2a5b1a1b6",
-        instagram: "",
-        github: "",
-      },
-    },
+    // {
+    //   id: 7,
+    //   title: "Card 7",
+    //   image: raghav,
+    //   name: "Raghav",
+    //   details: "Elevating brands through strategic marketing magic as a results-driven executive.",
+    //   designation: "Marketing Executive",
+    //   socialLinks: {
+    //     linkedin: "https://www.linkedin.com/in/atul-kumar-2a5b1a1b6",
+    //     instagram: "",
+    //     github: "",
+    //   },
+    // },
     {
       id: 8,
       title: "Card 7",
@@ -170,8 +170,8 @@ const GlassCardGrid = () => {
     {
       id: 10,
       title: "Card 7",
-      image: manas,
-      name: "Manas",
+      image: aryan,
+      name: "Aryan",
       details: "",
       designation: "Collaboration & Outreach Executive",
       socialLinks: {
