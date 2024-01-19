@@ -107,7 +107,7 @@ export default function Achievements() {
             >
               {num.map((title, index) => (
                 <SwiperSlide key={index} >
-                  <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+                  <div className="relative w-[400px] h-[400px] grid place-items-center shadow-lg cursor-pointer transition-all hover:scale-105 hover:shadow-2xl">
                     <img src={imgurl[index]} onClick={() => openBox(index)} className="absolute top-0 left-0 object-cover" alt="" />
                     {/* <div className="flex flex-col z-30 w-full bg-[#00000081] py-2 px-4">
                   <h1 className='text-2xl font-normal text-[#ffffff] font-oswald  uppercase'>{title}</h1>
