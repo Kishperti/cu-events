@@ -70,10 +70,10 @@ const Footer = () => {
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
             <h2 className="font-bold text-white font-oswald text-xl my-2">CONTACT</h2>
             <ul className="font-maven text-xl">
-              <li className="py-3 text-sm flex items-center ">
+              {/* <li className="py-3 text-sm flex items-center ">
                 <FaPhone className="mr-2 text-xl" />
                 (406) 555-0120
-              </li>
+              </li> */}
               <li className="py-3 text-sm flex items-center">
                 <IoMail className="mr-2 text-xl" /> support@cac-cuchd.in
               </li>
