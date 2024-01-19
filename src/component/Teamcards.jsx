@@ -10,6 +10,7 @@ import atul from '../assets/atul.png';
 import raghav from '../assets/Raghav.png';
 import shivansh from '../assets/Shivansh.png';
 import anshika from '../assets/anshika.png';
+import manas from '../assets/Manas.png';
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   const visibleSocialLinks = Object.keys(socialLinks).filter(
@@ -25,11 +26,11 @@ const GlassCard = ({ image, title, details, name, designation, socialLinks }) =>
       <div className="bg-[#091022a9] w-full absolute bottom-0 left-0 z-20 p-2">
 
         <h3 className="text-white opacity-70 text-lg font-semibold z-50">{name}</h3>
-        <p className="text-white opacity-80 text-sm">{designation}</p>
+        {/* <p className="text-white opacity-80 text-sm">{designation}</p> */}
       </div>
       <div className="opacity-0 group-hover:opacity-100 group-hover:rotate-6 absolute inset-0 bg-[#091022] bg-opacity-25 z-50 backdrop-blur-md rounded-lg p-6 transition-opacity flex flex-col justify-center font-maven">
         <p className="text-white font-oswald text-lg">{name}</p>
-        <p className="text-white uppercase text-xs mb-2">{designation}</p>
+        {/* <p className="text-white uppercase text-xs mb-2">{designation}</p> */}
         <p className="text-white text-sm mb-2">{details}</p>
         <div className="flex mt-2">
         {visibleSocialLinks.map((link) => (
@@ -162,6 +163,19 @@ const GlassCardGrid = () => {
       designation: "Social Media & Outreach Lead",
       socialLinks: {
         linkedin: "https://www.linkedin.com/in/shivansh-tiwari-48894924a/",
+        instagram: "",
+        github: "",
+      },
+    },
+    {
+      id: 10,
+      title: "Card 7",
+      image: manas,
+      name: "Manas",
+      details: "",
+      designation: "Collaboration & Outreach Executive",
+      socialLinks: {
+        linkedin: "http://www.linkedin.com/in/manastiwari27",
         instagram: "",
         github: "",
       },
