@@ -17,7 +17,7 @@ import {
 
 const Footer = () => {
   return (
-    <div id={"contact"}  className="relative w-full">
+    <div id={"contact"} className="relative w-full">
       <div className="flex flex-col lg:flex-row z-50 absolute w-[90%] lg:w-[55%] bg-[#E2012D] py-3 font-extrabold font-maven text-white -translate-y-3/4 left-[50%] -translate-x-1/2 min-h-[120px] justify-between lg:px-12 lg:items-center px-2">
         <div className="">
           <p className="text-3xl font-oswald">PASSION IN ACTION</p>
@@ -44,7 +44,10 @@ const Footer = () => {
               />
             </h1>
             <p className="text-white text-[15px] font-maven mt-4 text-justify lg:mr-12">
-            Welcome to CAC, the pulse of academic vibrancy at Chandigarh University. We're dedicated to inspiring and empowering through diverse academic competitions, hackathons, and workshops.
+              "CAC - The Face of Chandigarh University", 
+              Public & Student Relations Community, CU <br/>
+              #Letspromotecu
+
             </p>
             <div className="flex cursor-pointer my-8">
               <a href="https://www.youtube.com/@CAC-Podcast"><FaYoutube size={30} className="mr-4" /></a>
