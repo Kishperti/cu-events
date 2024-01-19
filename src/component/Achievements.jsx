@@ -161,7 +161,7 @@ export default function Achievements() {
           </div>
           {isBoxOpen && <ModuleBox onClose={closeBox}  {...boxData[currentIndex]} />}
           <div className="w-full border-b-4 border-red-600 overflow-y-hidden mt-28">
-            <h1 className="text-6xl lg:text-9xl font-oswald tracking-tight font-bold text-center opacity-30 text-[#E2012D] -mb-3 lg:-mb-6">OUR PARTNERS</h1>
+            
           </div>
 
         </div>
