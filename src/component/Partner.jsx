@@ -10,12 +10,17 @@ import rotaract from "../assets/rotaract.png";
 import gdsc from "../assets/gdsc.jpg";
 import alexa from "../assets/alexa.png";
 import cu from "../assets/cu.png";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import tri from "../assets/tri.png"
 
 
 export default function Partner() {
   return (
     <>
-      <div id={"partner"}  className="hidden lg:block w-full px-20 py-8">
+      <div id={"partner"}  className="hidden lg:block w-full px-20 py-8 relative">
+        <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
+        <h1 className='text-[#091022] text-6xl font-bold font-oswald text-center mb-4'>ONGOING <span className='text-[#E2012D]'>EVENTS</span></h1>
+        <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
         <Swiper
           slidesPerView={4}
           spaceBetween={50}
