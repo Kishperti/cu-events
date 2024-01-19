@@ -15,7 +15,7 @@ import cu from "../assets/cu.png";
 export default function Partner() {
   return (
     <>
-      <div id={"partner"}  className="hidden lg:block w-full px-20 py-8 bg-[#E2012D]">
+      <div id={"partner"}  className="hidden lg:block w-full px-20 py-8">
         <Swiper
           slidesPerView={4}
           spaceBetween={50}
@@ -27,13 +27,13 @@ export default function Partner() {
           modules={[Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={cu} className='h-full w-full scale-90' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={ieee} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={gfg} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={gdsc} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={rotaract} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-4 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={alexa} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
-          <SwiperSlide className='h-28 w-80 p-2 bg-white rounded-md shadow-md grid place-items-center transition-all hover:scale-105'><img src={grownity} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={cu} className='h-full w-full scale-90' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={ieee} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={gfg} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={gdsc} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={rotaract} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-4 transition-all hover:scale-105'><img src={alexa} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
+          <SwiperSlide className='h-28 w-80 p-2 transition-all hover:scale-105'><img src={grownity} className='h-full w-full' alt="1" border="0" /></SwiperSlide>
 
          
         </Swiper>
