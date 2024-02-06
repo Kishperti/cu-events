@@ -7,17 +7,17 @@ import 'swiper/css/navigation';
 import './styles.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import achivBox from "../assets/achiv-box1.png";
+import sevent1 from "../assets/sevent1.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaTimes } from 'react-icons/fa';
 
 // Static data array
 const eventData = [
   {
-    title: "Event 1",
-    description: "Description for Event 1",
-    imageUrl: "path/to/event1-image.jpg",
-    linkEvent: "/event1",
+    title: "DD Robocon",
+    description: "🤖🎉 Chandigarh University brings you Exciting news! Introducing DD Robocon India 2024, powered by IIT Delhi! 🚀 Get ready for an exhilarating showdown as robots race against time to conquer complex tasks. This event isn't just about competition; it's about forging lasting bonds and propelling engineering and broadcasting technologies to unprecedented heights! Join us at Thyagraj Stadium, New Delhi, on Sat-Sun, 13-14 July 2024, for an unforgettable celebration of innovation and unity! Don't miss out on this opportunity to shape the future! 🌟",
+    imageUrl: sevent1,
+    linkEvent: "http://www.ddrobocon.in/",
   },
   // Add more events as needed
 ];
@@ -66,7 +66,7 @@ const StaticEvents = () => {
   };
 
   return (
-    <div id={"events"} className="h-full w-full bg-[#dddddd] py-16 relative">
+    <div id={"staticevents"} className="h-full w-full bg-[#dddddd] py-10 relative">
       <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
       <h1 className='text-[#091022] text-6xl font-bold font-oswald text-center mb-4'>ONGOING <span className='text-[#E2012D]'>EVENTS</span></h1>
       <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
@@ -85,7 +85,7 @@ const StaticEvents = () => {
             disableOnInteraction: false,
           }}
           loop={eventData.length > 3}
-          className="mySwiper px-20 mt-12"
+          className="mySwiper px-20 mt-12 py-6"
         >
           {eventData.map((event, index) => (
             <SwiperSlide key={index}>
