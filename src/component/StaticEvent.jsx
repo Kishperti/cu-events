@@ -8,6 +8,7 @@ import './styles.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import sevent1 from "../assets/sevent1.jpg";
+import sevent2 from "../assets/sevent2.jpg";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaTimes } from 'react-icons/fa';
 
@@ -19,6 +20,13 @@ const eventData = [
     imageUrl: sevent1,
     linkEvent: "http://www.ddrobocon.in/",
   },
+  {
+    title: "Autodesk Fusion",
+    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
+    imageUrl: sevent2,
+    linkEvent: "",
+  },
+
   // Add more events as needed
 ];
 
