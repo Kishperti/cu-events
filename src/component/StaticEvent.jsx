@@ -104,6 +104,37 @@ const StaticEvents = () => {
           ))}
         </Swiper>
       </div>
+        {/* Mobile Slider */}
+        <div className="box block lg:hidden">
+          <Swiper
+            slidesPerView={1}
+            centeredSlides={true}
+            spaceBetween={100}
+            pagination={{
+              clickable: true,
+            }}
+            modules={[Pagination, Navigation, Autoplay]}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop={true}
+            className="mySwiper px-16 mt-12"
+          >
+            {eventData.map((event, index) => (
+              <SwiperSlide key={index}>
+                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+                  <img
+                    src={event.imageUrl}
+                    onClick={() => openBox(index)}
+                    className="absolute top-0 left-0 object-cover"
+                    alt=""
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       {isBoxOpen && <ModuleBox onClose={closeBox} {...eventData[currentIndex]} />}
     </div>
   );
