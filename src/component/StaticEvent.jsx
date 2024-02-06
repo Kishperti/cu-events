@@ -74,7 +74,7 @@ const StaticEvents = () => {
   };
 
   return (
-    <div id={"staticevents"} className="h-full w-full bg-[#dddddd] py-10 relative">
+    <div id={"sevents"} className="h-full w-full bg-[#dddddd] py-10 relative">
       <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
       <h1 className='text-[#091022] text-6xl font-bold font-oswald text-center mb-4'>ONGOING <span className='text-[#E2012D]'>EVENTS</span></h1>
       <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>

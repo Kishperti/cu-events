@@ -43,7 +43,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#events"
+                href="#sevents"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Events

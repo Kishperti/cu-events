@@ -17,7 +17,7 @@ export default function Home() {
             <Stats id="stats"/>
             <About id="about"/>
             {/* <Events id="events"/> */}
-            <StaticEvents id="staticevents"/>
+            <StaticEvents id="sevents"/>
             <Achievements id="achievements"/>
             <Partner id="partner"/>
             <Footer id="contact"/>
