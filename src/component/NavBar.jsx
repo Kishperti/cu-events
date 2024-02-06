@@ -51,7 +51,7 @@ const NavBar = () => {
             </li>
             <li>
               <a
-                href="#achievements"
+                href="#sachievements"
                 className="p-4 mr-4 font-maven uppercase hover:text-[#df0000] transition-all cursor-pointer"
               >
                 Achievers
@@ -107,12 +107,12 @@ const NavBar = () => {
                 ABOUT
               </li>
             </a>
-            <a href="#events">
+            <a href="#sevents">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 EVENTS
               </li>
             </a>
-            <a href="#achievements">
+            <a href="#sachievements">
               <li className="font-maven uppercase p-4 mt-3 hover:text-red-600 hover:transition-opacity duration-500 ease-in-out border-b border-white-600 border-l-8 hover:border-red-700">
                 ACHIEVERS
               </li>
