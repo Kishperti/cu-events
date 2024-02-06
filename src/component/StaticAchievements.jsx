@@ -7,19 +7,44 @@ import 'swiper/css/navigation';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import './styles.css';
 import { FaTimes } from 'react-icons/fa';
-import sevent1 from "../assets/sevent1.jpg";
-import sevent2 from "../assets/sevent2.jpg";
+import sachiv1 from "../assets/sachiv1.png";
+import sachiv2 from "../assets/sachiv2.png";
+import sachiv3 from "../assets/sachiv3.png";
+import sachiv4 from "../assets/sachiv4.png";
+import sachiv5 from "../assets/sachiv5.png";
+import sachiv6 from "../assets/sachiv6.png";
+
 
 const achivData = [
   {
     title: "DD Robocon",
     description: "🤖🎉 Chandigarh University brings you Exciting news! Introducing DD Robocon India 2024, powered by IIT Delhi! 🚀 Get ready for an exhilarating showdown as robots race against time to conquer complex tasks. This event isn't just about competition; it's about forging lasting bonds and propelling engineering and broadcasting technologies to unprecedented heights! Join us at Thyagraj Stadium, New Delhi, on Sat-Sun, 13-14 July 2024, for an unforgettable celebration of innovation and unity! Don't miss out on this opportunity to shape the future! 🌟",
-    imageUrl: sevent1,
+    imageUrl: sachiv1,
   },
   {
     title: "Autodesk Fusion",
     description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
-    imageUrl: sevent2,
+    imageUrl: sachiv2,
+  },
+  {
+    title: "Autodesk Fusion",
+    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
+    imageUrl: sachiv3,
+  },
+  {
+    title: "Autodesk Fusion",
+    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
+    imageUrl: sachiv4,
+  },
+  {
+    title: "Autodesk Fusion",
+    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
+    imageUrl: sachiv5,
+  },
+  {
+    title: "Autodesk Fusion",
+    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
+    imageUrl: sachiv6,
   },
 ];
 
