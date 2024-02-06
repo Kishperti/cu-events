@@ -123,7 +123,7 @@ const StaticEvents = () => {
           >
             {eventData.map((event, index) => (
               <SwiperSlide key={index}>
-                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all -skew-x-6 hover:skew-x-0 hover:shadow-2xl">
+                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all hover:shadow-2xl">
                   <img
                     src={event.imageUrl}
                     onClick={() => openBox(index)}
