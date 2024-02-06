@@ -134,6 +134,13 @@ export default function Events() {
               </div>
             </SwiperSlide>
              ))}
+             {/* {num.map((title, index) => ( */}
+            <SwiperSlide>
+              <div className="relative shadow-lg w-[400px] h-[400px] grid place-items-center cursor-pointer transition-all hover:scale-105 hover:shadow-2xl shadow-[#ffffff17]">
+                <img src={""} onClick={() => openBox(index)}  className="absolute h-full w-full top-0 left-0 object-cover" alt="" />
+                
+              </div>
+            </SwiperSlide>
           </Swiper>
         </div>
         {/* Mobile Slider */}
