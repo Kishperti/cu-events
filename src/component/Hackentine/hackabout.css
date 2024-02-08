@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Chiptune Valentine";
+    src: url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.eot");
+    src: url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.eot?#iefix")format("embedded-opentype"),
+        url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.woff2")format("woff2"),
+        url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.woff")format("woff"),
+        url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.ttf")format("truetype"),
+        url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.svg#Chiptune Valentine")format("svg");
+}
+::-webkit-scrollbar {
+    width: 12px; /* Set the width of the scrollbar as needed */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: transparent; /* Set the background color of the scrollbar thumb to transparent */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent; /* Set the background color of the scrollbar track to transparent */
+  }
+.chip {
+    font-family: "Chiptune Valentine";
+}
+
+.about-container .about-envelope-wrapper {
+    background-color: #f5edd1;
+    transform: perspective(400px);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    z-index: 30;
+}
+
+.about-container .about-envelope-wrapper .about-envelope {
+    position: relative;
+    width: 500px;
+    height: 400px;
+}
+
+.about-container .about-envelope-wrapper .about-envelope::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    border-top: 200px solid #ecdeb8;
+    border-right: 250px solid transparent;
+    border-left: 250px solid transparent;
+    top: 0;
+    transform-origin: top;
+    transition: all .3s ease-in-out;
+}
+
+.about-container .about-envelope-wrapper .about-envelope::after {
+    content: "";
+    position: absolute;
+    z-index: 4;
+    border-top: 100px solid transparent;
+    border-left: 250px solid #e6cfa7;
+    border-right: 250px solid #e6cfa7;
+    border-bottom: 100px solid #e6cfa7;
+    bottom: 0;
+}
+
+.about-letter {
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 57%;
+    height: 80%;
+    background: #fff;
+    transition: all .7s ease-in-out;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.about-letter .about-text {
+    font-size: 10px;
+    color: #444;
+    opacity: 0;
+    width: 100%;
+}
+.about-cont{
+    overflow-y: scroll;
+    height: 250px;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.about-heart {
+    position: absolute;
+    top: 73%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #A2171C;
+    z-index: 4;
+    transform: translate(-50%, -20%) rotate(45deg);
+    transition: transform .3s ease-in-out .7s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.about-heart::before,
+.about-heart::after {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #A2171C;
+    border-radius: 50%;
+}
+
+.about-heart::before {
+    top: -7.5px;
+}
+
+.about-heart::after {
+    right: 7.5px;
+}
+
+.about-flap .about-envelope::before {
+    z-index: 0;
+    transform: rotateX(180deg);
+    transition-delay: 0.4s;
+}
+
+.about-flap .about-envelope .about-letter {
+    bottom: 100px;
+    transform: scale(1.5);
+    transition-delay: .7s;
+    z-index: 3;
+}
+
+.about-flap .about-envelope .about-letter .about-text {
+    opacity: 1;
+}
+
+.about-flap .about-envelope .overlay {
+    bottom: 150px;
+    transform: scale(1.5);
+    transition-delay: 1s;
+    z-index: 30;
+    opacity: 1;
+}
+
+.about-flap .about-heart {
+    transform: rotate(45deg);
+    transition-delay: 0.4s;
+
+}
+
+.about-clouds {
+    opacity: 1;
+    position: absolute;
+    background-color: #38508c;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: -5px;
+    left: -35px;
+    box-shadow: 60px 30px #38508c, 138px 20px #38508c, 190px 20px #38508c, 260px 50px #38508c, 300px 20px #38508c, 360px 10px #38508c, 400px 10px #38508c, 460px 20px #38508c, 520px 10px #38508c, 580px 20px #38508c, 640px 10px #38508c, 700px 20px #38508c, 760px 10px #38508c, 820px 20px #38508c, 880px 10px #38508c, 940px 20px #38508c, 1000px 10px #38508c, 1060px 20px #38508c, 1120px 10px #38508c, 1180px 20px #38508c, 1240px 10px #38508c, 1300px 20px #38508c, 1360px 10px #38508c, 1420px 20px #38508c, 1480px 10px #38508c, 1540px 20px #38508c, 1600px 10px #38508c, 1660px 20px #38508c, 1720px 10px #38508c, 1780px 20px #38508c, 1840px 10px #38508c, 1900px 20px #38508c, 1960px 10px #38508c, 2020px 20px #38508c, 2080px 10px #38508c, 2140px 20px #38508c, 2200px 10px #38508c, 2260px 20px #38508c, 2320px 10px #38508c, 2380px 20px #38508c, 2440px 10px #38508c, 2500px 20px #38508c, 2560px 10px #38508c, 2620px 20px #38508c, 2680px 10px #38508c, 2740px 20px #38508c;
+    opacity: 0.95;
+    animation: slide 5s ease infinite alternate-reverse;
+}
+.about-clouds::after{
+    opacity: 0.85;
+    content: "";
+    position: absolute;
+    background-color: #4f659e;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 40px;
+    left: -40px;
+    box-shadow: 50px 20px #4f659e, 100px 30px #4f659e, 150px 40px #4f659e, 200px 15px #4f659e, 260px 30px #4f659e, 330px 30px #4f659e, 380px 10px #4f659e, 450px 20px #4f659e, 520px 10px #4f659e, 580px 20px #4f659e, 640px 10px #4f659e, 700px 20px #4f659e, 760px 10px #4f659e, 820px 20px #4f659e, 880px 10px #4f659e, 940px 20px #4f659e, 1000px 10px #4f659e, 1060px 20px #4f659e, 1120px 10px #4f659e, 1180px 20px #4f659e, 1240px 10px #4f659e, 1300px 20px #4f659e, 1360px 10px #4f659e, 1420px 20px #4f659e, 1480px 10px #4f659e, 1540px 20px #4f659e, 1600px 10px #4f659e, 1660px 20px #4f659e, 1720px 10px #4f659e, 1780px 20px #4f659e, 1840px 10px #4f659e, 1900px 20px #4f659e, 1960px 10px #4f659e, 2020px 20px #4f659e, 2080px 10px #4f659e, 2140px 20px #4f659e, 2200px 10px #4f659e, 2260px 20px #4f659e, 2320px 10px #4f659e, 2380px 20px #4f659e, 2440px 10px #4f659e, 2500px 20px #4f659e, 2560px 10px #4f659e, 2620px 20px #4f659e, 2680px 10px #4f659e, 2740px 20px #4f659e;
+    animation: slide 4.5s ease infinite alternate-reverse 1s;
+}
+.about-clouds::before{
+    opacity: 0.95;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 5;
+    bottom: 70px;
+    left: -20px;
+    background-color: #2a4076;
+    box-shadow: 55px 30px #2a4076, 125px 10px #2a4076, 175px 20px #2a4076, 250px 10px #2a4076, 320px 5px #2a4076, 380px 10px #2a4076, 440px 20px #2a4076, 500px 10px #2a4076, 560px 20px #2a4076, 620px 10px #2a4076, 680px 20px #2a4076, 740px 10px #2a4076, 800px 20px #2a4076, 860px 10px #2a4076, 920px 20px #2a4076, 980px 10px #2a4076, 1040px 20px #2a4076, 1100px 10px #2a4076, 1160px 20px #2a4076, 1220px 10px #2a4076, 1280px 20px #2a4076, 1340px 10px #2a4076, 1400px 20px #2a4076, 1460px 10px #2a4076, 1520px 20px #2a4076, 1580px 10px #2a4076, 1640px 20px #2a4076, 1700px 10px #2a4076, 1760px 20px #2a4076, 1820px 10px #2a4076, 1880px 20px #2a4076, 1940px 10px #2a4076, 2000px 20px #2a4076, 2060px 10px #2a4076, 2120px 20px #2a4076, 2180px 10px #2a4076, 2240px 20px #2a4076, 2300px 10px #2a4076, 2360px 20px #2a4076, 2420px 10px #2a4076, 2480px 20px #2a4076, 2540px 10px #2a4076, 2600px 20px #2a4076, 2660px 10px #2a4076, 2720px 20px #2a4076, 2780px 10px #2a4076;
+    animation: slide 5.5s ease infinite alternate-reverse 2s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-200px);
+    }
+
+    100% {
+        transform: translateX(-100px);
+    }
+}
+@media screen and (max-width: 768px){
+    .about-container .about-envelope-wrapper .about-envelope {
+        width: 300px;
+        height: 400px;
+    }
+    .about-container .about-envelope-wrapper .about-envelope::before {
+        border-top: 100px solid #ecdeb8;
+        border-right: 150px solid transparent;
+        border-left: 150px solid transparent;
+    }
+    .about-container .about-envelope-wrapper .about-envelope::after {
+        border-top: 50px solid transparent;
+        border-left: 150px solid #e6cfa7;
+        border-right: 150px solid #e6cfa7;
+        border-bottom: 50px solid #e6cfa7;
+    }
+    .about-letter {
+        bottom: 30px;
+        width: 60%;
+        height: 70%;
+    }
+    .about-heart {
+        top: 87%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+    }
+    .about-cont{
+        height: 250px;
+    }
+    .about-heart::before,
+    .about-heart::after {
+        width: 10px;
+        height: 10px;
+    }
+    .about-heart::before {
+        top: -5px;
+    }
+    .about-heart::after {
+        right: 5px;
+    }
+    .about-flap .about-envelope .about-letter {
+        bottom: 100px;
+    }
+    .about-flap .about-envelope .overlay {
+        bottom: 100px;
+        transform: scale(1.5);
+    }
+    .about-flap .about-heart {
+        transform: rotate(45deg);
+    }
+    
+}

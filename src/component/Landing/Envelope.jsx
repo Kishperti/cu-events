@@ -16,7 +16,7 @@ export default function Envelope() {
                 <div className={`envelope-wrapper ${isFlapOpen ? 'envelope-wrapper flap' : 'envelope-wrapper'}`}>
                     <div className="envelope">
                         <div className="letter">
-                            <div className="text flex flex-col justify-center items-center">
+                            <div className="flex flex-col justify-center items-center">
                                 <strong className='chip text-2xl text-[#A2171C] text-center'>Hackentine's Quest</strong>
                             </div>
                         </div>

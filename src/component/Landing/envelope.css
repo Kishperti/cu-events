@@ -95,12 +95,6 @@
     opacity: 0;
 }
 
-.letter .text {
-    font-size: 10px;
-    color: #444;
-    text-align: left;
-    opacity: 0;
-}
 
 .heart {
     position: absolute;
