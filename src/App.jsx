@@ -4,7 +4,7 @@ import Team from "./pages/Team";
 // React Router
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
-import Hackentine from "./component/Hackentine/Hackentine";
+import Hackentine from "./pages/Hackentine";
 
 const App = () => {
   return (

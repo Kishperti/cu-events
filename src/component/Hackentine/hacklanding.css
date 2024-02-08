@@ -1,0 +1,34 @@
+.valentines-day-card {
+    position: relative;
+    width: 480px;
+    height: 300px;
+    background-color: #ff8fa3;
+    overflow: hidden;
+    border: 10px solid white;
+    border-radius: 10px;
+    box-shadow: 0 8 108px rgba(0, 0, 0, .4);
+}
+
+.valentines-day-card::before {
+    content: "";
+    position: absolute;
+    background-color: #ffb3c1;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 140px;
+    left: -25px;
+    box-shadow: 60px 20px #ffb3c1, 138px 10px #ffb3c1, 190px 20px #ffb3c1, 260px -5px #ffb3c1, 340px 20px #ffb3c1;
+}
+
+.valentines-day-card::after {
+    content: "";
+    position: absolute;
+    background-color: #ffccd5;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    top: 160px;
+    left: 40px;
+    box-shadow: 50px 20px #ffccd5, 120px 40px #ffccd5, 200px 15px #ffccd5, 260px 30px #ffccd5, 330px 30px #ffccd5, 380px 10px #ffccd5;
+}
