@@ -19,7 +19,7 @@ export default function Envelope() {
                             </div>
                         </div>
                         <div className="overlay">
-                            <button className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#091022] text-white mt-3 px-2 py-1 transition-all hover:scale-95 cursor-pointer'>Enter</button>
+                            <button className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#A2171C] text-white mt-3 px-2 py-1 transition-all hover:scale-95 cursor-pointer'>Enter</button>
                         </div>
                     </div>
                     <div className="heart" onClick={handleHeartClick}></div>
