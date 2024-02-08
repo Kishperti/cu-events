@@ -1,0 +1,124 @@
+@font-face {
+    font-family: "Chiptune Valentine";
+    src: url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.eot");
+    src: url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.svg#Chiptune Valentine")format("svg");
+}
+.chip{
+    font-family: "Chiptune Valentine";
+}
+.container .envelope-wrapper{
+    background-color: #f5edd1;
+    transform: perspective(400px);
+    box-shadow: 0 0 40px rgba(0,0,0,0.2);
+}
+.container .envelope-wrapper .envelope{
+    position: relative;
+    width: 300px;
+    height: 230px;
+}
+.container .envelope-wrapper .envelope::before{
+    content: "";
+    position: absolute;
+    z-index: 2;
+    border-top: 130px solid #ecdeb8;
+    border-right: 150px solid transparent;
+    border-left: 150px solid transparent;
+    top: 0;
+    transform-origin: top;
+    transition: all .3s ease-in-out;
+}
+.container .envelope-wrapper .envelope::after{
+    content: "";
+    position: absolute;
+    z-index: 4;
+    border-top: 130px solid transparent;
+    border-left: 150px solid #e6cfa7;
+    border-right: 150px solid #e6cfa7;
+    border-bottom: 100px solid #e6cfa7;
+    bottom: 0;
+}
+.letter{
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 57%;
+    height: 80%;
+    background: #fff;
+    transition: all .7s ease-in-out;
+    padding: 20px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.overlay{
+    position: absolute;
+    right: 20%;
+    bottom: 0;
+    width: 57%;
+    height: 70px;
+    background: transparent;
+    transition: opacity .7s ease-in-out;
+    padding: 20px 10px;
+    opacity: 0;
+}
+.letter .text{
+    font-size: 10px;
+    color: #444;
+    text-align: left;
+    opacity: 0;
+}
+.heart{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    background: #A2171C;
+    z-index: 4;
+    transform: translate(-50%, -20%) rotate(45deg);
+    transition: transform .3s ease-in-out .7s;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;    
+}
+.heart::before, .heart::after{
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background: #A2171C;
+    border-radius: 50%;
+}
+.heart::before{
+    top: -7.5px;
+}
+.heart::after{
+    right: 7.5px;
+}
+.flap .envelope::before{
+    z-index: 0;
+    transform: rotateX(180deg);
+    transition-delay: 0.4s;
+}
+.flap .envelope .letter{
+    bottom: 100px;
+    transform: scale(1.5);
+    transition-delay: .7s;
+    z-index: 3;
+}
+.flap .envelope .letter .text{
+    opacity: 1;
+}
+.flap .envelope .overlay{
+    bottom: 150px;
+    transform: scale(1.5);
+    transition-delay: 1s;
+    z-index: 30; 
+    opacity: 1;
+}
+.flap .heart{
+    transform: rotate(90deg);
+    transition-delay: 0.4s;
+
+}

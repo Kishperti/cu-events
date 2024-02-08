@@ -14,7 +14,6 @@ import sachiv2 from "../assets/sachiv2.png";
 import sachiv3 from "../assets/sachiv3.png";
 import sachiv4 from "../assets/sachiv4.png";
 import sachiv5 from "../assets/sachiv5.png";
-import sachiv6 from "../assets/sachiv6.png";
 
 
 const achivData = [
@@ -42,11 +41,6 @@ const achivData = [
     title: "Autodesk Fusion",
     description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
     imageUrl: sachiv5,
-  },
-  {
-    title: "Autodesk Fusion",
-    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
-    imageUrl: sachiv6,
   },
 ];
 
