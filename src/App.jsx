@@ -4,6 +4,7 @@ import Team from "./pages/Team";
 // React Router
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
+import Hackentine from "./component/Hackentine/Hackentine";
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/team" element={<Team />} />
           <Route path="/landing" element={<Landing />} />
+          <Route path="/hackentine" element={<Hackentine />} />
         </Routes>
       </Router>
     </div>
