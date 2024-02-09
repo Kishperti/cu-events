@@ -3,6 +3,7 @@ import HackLanding from '../component/Hackentine/HackLanding'
 import HackAbout from '../component/Hackentine/HackAbout'
 import Schedule from '../component/Hackentine/Schedule'
 import Attractions from '../component/Hackentine/Attractions'
+import Sponsors from '../component/Hackentine/Sponsors'
 
 export default function Hackentine() {
   return (
@@ -11,6 +12,7 @@ export default function Hackentine() {
         <HackAbout/>
         <Schedule/>
         <Attractions/>
+        <Sponsors/>
     </div>
   )
 }

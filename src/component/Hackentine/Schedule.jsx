@@ -10,7 +10,7 @@ export default function Schedule() {
                 Event Calendar
             </div>
             <div className="grid overflow-x-hidden grid-cols-1 w-full h-full mt-24 px-4 lg:px-40">
-                <div className="flex flex-row my-6 bg-[#ffe8e8] rounded-r-full">
+                <div className="flex flex-row my-8 bg-[#ffe8e8] rounded-r-full transition-all cursor-pointer hover:translate-x-[10px]">
                     <div className="w-[30%] lg:w-[40%] bg-[#A2171C] relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-full before:h-4 before:bg-[#A2171C] shadow-2xl before:-translate-x-full rounded-r-full flex items-center justify-center lg:justify-between flex-row lg:p-2">
                         <h1 className='lg:text-4xl text-lg pl-4 font-black text-[#091022] chip'>Feburary 22, 2024</h1>
                         <div className="img lg:grid place-items-center p-3 hidden w-24 h-24 rounded-full bg-[#ffe8e8]">
@@ -25,7 +25,7 @@ export default function Schedule() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row my-6 bg-[#ffe8e8] rounded-l-full">
+                <div className="flex flex-row my-8 bg-[#ffe8e8] rounded-l-full transition-all cursor-pointer hover:translate-x-[-10px]">
 
                     <div className="w-[70%] lg:w-[60%] flex flex-col justify-center py-8 lg:items-start pl-8 lg:pl-8 lg:py-4">
 
@@ -41,7 +41,7 @@ export default function Schedule() {
                         <h1 className='lg:text-4xl chip text-lg pl-4 lg:pl-0 lg:pr-4 font-black text-[#091022]'>Feburary 22, 2024</h1>
                     </div>
                 </div>
-                <div className="flex flex-row my-6 bg-[#ffe8e8] rounded-r-full">
+                <div className="flex flex-row my-8 bg-[#ffe8e8] rounded-r-full transition-all cursor-pointer hover:translate-x-[10px]">
                     <div className="w-[30%] lg:w-[40%] bg-[#A2171C] relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-full before:h-4 before:bg-[#A2171C] shadow-2xl before:-translate-x-full rounded-r-full flex items-center justify-center lg:justify-between flex-row lg:p-2">
                         <h1 className='lg:text-4xl text-lg pl-4 font-black text-[#091022] chip'>Feburary 22, 2024</h1>
                         <div className="img lg:grid place-items-center p-3 hidden w-24 h-24 rounded-full bg-[#ffe8e8]">
@@ -56,7 +56,7 @@ export default function Schedule() {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-row my-6 bg-[#ffe8e8] rounded-l-full">
+                <div className="flex flex-row my-8 bg-[#ffe8e8] rounded-l-full transition-all cursor-pointer hover:translate-x-[-10px]">
 
                     <div className="w-[70%] lg:w-[60%] flex flex-col justify-center py-8 lg:items-start pl-8 lg:pl-8 lg:py-4">
 

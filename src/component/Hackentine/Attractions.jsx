@@ -5,7 +5,7 @@ export default function Attractions() {
     return (
         <div className="bg-[#55141F] relative h-full w-full flex flex-col items-center justify-start pt-[120px] pb-[200px]">
             <div className="over"></div>
-            <div class="schedule-clouds z-40"></div>
+            <div class="about-clouds z-40"></div>
             <div className="chip gif text-center text-5xl lg:text-8xl text-alt-white">
                 Event Store
             </div>
@@ -63,7 +63,7 @@ export default function Attractions() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col justify-center w-full h-full mt-32 items-center lg:rotate-2">
+            <div className="flex flex-col justify-center w-full h-full mt-24 lg:mt-32 items-center lg:rotate-2">
                 <div className="w-full h-3 translate-x-[10px] bg-[#1e1012] hidden lg:block overflow-x-hidden relative before:absolute before:top-0 before:left-0 before:w-[2000px] before:h-3 before:bg-[#1e1012]"></div>
                 <div className="w-full h-3 translate-x-[-10px] -mt-3 bg-[#1e1012] hidden lg:block overflow-x-hidden relative before:absolute before:top-0 before:left-0 before:w-[2000px] before:h-3 before:bg-[#1e1012]"></div>
                 <div className="grid strip2 grid-cols-1 place-items-center gap-16 lg:grid-cols-4 w-full relative px-4 lg:px-20">
