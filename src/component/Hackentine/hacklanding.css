@@ -345,6 +345,16 @@
     transition: .2s;
     text-shadow: 2px 2px 4px #A2171C;
 }
+.text-alt{
+    z-index: 3;
+    transition: .2s;
+    text-shadow: 2px 2px 4px #091022;
+}
+.text-alt-white{
+    z-index: 3;
+    transition: .2s;
+    text-shadow: 2px 2px 4px #ffe8e8;
+}
 .text-cont p{
     
     animation: blink 1s linear forwards;

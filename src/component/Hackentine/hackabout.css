@@ -8,7 +8,7 @@
         url("https://db.onlinewebfonts.com/t/4edda3f0bd631bb4a2b01bd572e9a643.svg#Chiptune Valentine")format("svg");
 }
 ::-webkit-scrollbar {
-    width: 12px; /* Set the width of the scrollbar as needed */
+    width: .5px; /* Set the width of the scrollbar as needed */
   }
   
   ::-webkit-scrollbar-thumb {
@@ -22,6 +22,28 @@
     font-family: "Chiptune Valentine";
 }
 
+.over2 {
+
+    background: radial-gradient(circle closest-side at 60% 43%, #55141F 26%, rgba(187, 0, 51, 0) 27%),
+        radial-gradient(circle closest-side at 40% 43%, #55141F 26%, rgba(187, 0, 51, 0) 27%),
+        radial-gradient(circle closest-side at 40% 22%, #A2171C 45%, rgba(221, 51, 85, 0) 46%),
+        radial-gradient(circle closest-side at 60% 22%, #A2171C 45%, rgba(221, 51, 85, 0) 46%),
+        radial-gradient(circle closest-side at 50% 35%, #A2171C 30%, rgba(221, 51, 85, 0) 31%),
+        radial-gradient(circle closest-side at 60% 43%, #55141F 26%, rgba(187, 0, 51, 0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 43%, #55141F 26%, rgba(187, 0, 51, 0) 27%) 50px 50px,
+        radial-gradient(circle closest-side at 40% 22%, #A2171C 45%, rgba(221, 51, 85, 0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 60% 22%, #A2171C 45%, rgba(221, 51, 85, 0) 46%) 50px 50px,
+        radial-gradient(circle closest-side at 50% 35%, #A2171C 30%, rgba(221, 51, 85, 0) 31%) 50px 50px;
+
+    background-color: #55141F;
+    background-size: 100px 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    opacity: 0.1;
+    width: 100%;
+}
 .about-container .about-envelope-wrapper {
     background-color: #f5edd1;
     transform: perspective(400px);

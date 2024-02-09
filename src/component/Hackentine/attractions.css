@@ -1,0 +1,53 @@
+body{
+    overflow-x: hidden;
+}
+.gif{
+    background-color: #ffe8e8;
+    background-image: url("https://img1.picmix.com/output/stamp/normal/4/6/2/4/2354264_59fd3.gif");
+    background-size: 300px 300px;
+    color: transparent;
+    -webkit-background-clip: text;
+}
+.strip1{
+    animation: slide 4s ease-in-out alternate-reverse infinite;
+    transform: perspective(1000px);
+}
+.strip2{
+    animation: slide2 4s ease-in-out alternate-reverse infinite;
+    transform: perspective(1000px);
+}
+.card{
+    transform-origin: top;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+.card:hover{
+
+    transform:skewX(2.5deg) skewY(2.5deg);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+    .strip1{
+        animation: none;
+    }
+    .strip2{
+        animation: none;
+    }
+    
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-20px);
+    }
+    100% {
+        transform: translateX(20px);
+    }
+}
+@keyframes slide2 {
+    0% {
+        transform: translateX(20px);
+    }
+    100% {
+        transform: translateX(-20px);
+    }
+}

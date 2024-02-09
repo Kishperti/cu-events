@@ -2,6 +2,7 @@ import React from 'react'
 import HackLanding from '../component/Hackentine/HackLanding'
 import HackAbout from '../component/Hackentine/HackAbout'
 import Schedule from '../component/Hackentine/Schedule'
+import Attractions from '../component/Hackentine/Attractions'
 
 export default function Hackentine() {
   return (
@@ -9,6 +10,7 @@ export default function Hackentine() {
         <HackLanding/>
         <HackAbout/>
         <Schedule/>
+        <Attractions/>
     </div>
   )
 }

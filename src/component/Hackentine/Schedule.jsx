@@ -4,12 +4,12 @@ import './schedule.css';
 
 export default function Schedule() {
     return (
-        <div className="main relative min-h-screen w-full bg-[#091022] flex flex-col items-center justify-start pt-[120px] pb-[200px] px-4 lg:px-40 overflow-x-hidden">
-        <div class="schedule-clouds z-20"></div>
+        <div className="main relative min-h-screen w-full bg-[#091022] flex flex-col items-center justify-start pt-[120px] pb-[200px]">
+            <div class="schedule-clouds z-40"></div>
             <div className="chip text-center text-5xl text-[#A2171C] lg:text-8xl text">
                 Event Calendar
             </div>
-            <div className="grid grid-cols-1 w-full h-full mt-24">
+            <div className="grid overflow-x-hidden grid-cols-1 w-full h-full mt-24 px-4 lg:px-40">
                 <div className="flex flex-row my-6 bg-[#ffe8e8] rounded-r-full">
                     <div className="w-[30%] lg:w-[40%] bg-[#A2171C] relative before:absolute before:top-1/2 before:left-0 before:-translate-y-1/2 before:w-full before:h-4 before:bg-[#A2171C] shadow-2xl before:-translate-x-full rounded-r-full flex items-center justify-center lg:justify-between flex-row lg:p-2">
                         <h1 className='lg:text-4xl text-lg pl-4 font-black text-[#091022] chip'>Feburary 22, 2024</h1>

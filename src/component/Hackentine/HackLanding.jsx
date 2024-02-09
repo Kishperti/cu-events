@@ -62,16 +62,16 @@ export default function HackLanding() {
                     <div class="text-cont z-50 flex flex-col justify-center items-center">
                         <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl text">Hackentine's Quest</p>
                         <a className='z-20' href="">
-                            <button className=' bg-[#A2171C] text-white z-20 mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
+                            <button className=' bg-[#A2171C] text-[#ffe8e8] z-20 mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
                         </a>
                     <div className="details mt-12 w-full h-16 flex justify-between items-center opacity-0 z-50">
                         <div className="flex items-center w-[50%] justify-around h-full mr-6">
                             <img className='h-full' src={calendar} alt="" />
-                            <p className='chip text-white text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
+                            <p className='chip text-[#ffe8e8] text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
                         </div>
                         <div className="flex items-center w-[50%] justify-around h-full ml-6">
                             <img className='h-full' src={venue} alt="" />
-                            <p className='chip text-white text-4xl opacity-75'>D1 Auditorium</p>
+                            <p className='chip text-[#ffe8e8] text-4xl opacity-75'>D1 Auditorium</p>
                         </div>
                     </div>
                     </div>

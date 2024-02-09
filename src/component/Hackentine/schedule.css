@@ -11,6 +11,7 @@
     box-shadow: 60px 30px #ff6e73, 138px 20px #ff6e73, 190px 20px #ff6e73, 260px 50px #ff6e73, 300px 20px #ff6e73, 360px 10px #ff6e73, 400px 10px #ff6e73, 460px 20px #ff6e73, 520px 10px #ff6e73, 580px 20px #ff6e73, 640px 10px #ff6e73, 700px 20px #ff6e73, 760px 10px #ff6e73, 820px 20px #ff6e73, 880px 10px #ff6e73, 940px 20px #ff6e73, 1000px 10px #ff6e73, 1060px 20px #ff6e73, 1120px 10px #ff6e73, 1180px 20px #ff6e73, 1240px 10px #ff6e73, 1300px 20px #ff6e73, 1360px 10px #ff6e73, 1420px 20px #ff6e73, 1480px 10px #ff6e73, 1540px 20px #ff6e73, 1600px 10px #ff6e73, 1660px 20px #ff6e73, 1720px 10px #ff6e73, 1780px 20px #ff6e73, 1840px 10px #ff6e73, 1900px 20px #ff6e73, 1960px 10px #ff6e73, 2020px 20px #ff6e73, 2080px 10px #ff6e73, 2140px 20px #ff6e73, 2200px 10px #ff6e73, 2260px 20px #ff6e73, 2320px 10px #ff6e73, 2380px 20px #ff6e73, 2440px 10px #ff6e73, 2500px 20px #ff6e73, 2560px 10px #ff6e73, 2620px 20px #ff6e73, 2680px 10px #ff6e73, 2740px 20px #ff6e73;
     opacity: 0.95;
     animation: slide 5s ease infinite alternate-reverse;
+    z-index: 20;
 }
 .schedule-clouds::after{
     opacity: 0.85;
