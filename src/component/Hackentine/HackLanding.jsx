@@ -1,8 +1,10 @@
 import React from 'react'
 import './hacklanding.css'
+import calendar from '../../assets/calendar.png'
+import venue from '../../assets/venue.png'
 export default function HackLanding() {
     return (
-        <div className='h-screen flex justify-center items-center w-full'>
+        <div className='lg:h-[110vh] h-screen flex justify-center items-center w-full'>
             <div class="happy-valentines w-full h-full">
                 <div class="valentines-day-card grid place-items-center">
                     <div class="clouds"></div>
@@ -57,13 +59,23 @@ export default function HackLanding() {
                         </div>
 
                     </div>
-                    <div class="text flex flex-col justify-center items-center ">
-                        <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl">Hackentine's Quest</p>
-                        <div className="text-white mt-2 text-lg lg:text-3xl">Join us on 24 <sup>th</sup> Feb, 2024</div>
-                        <a href="">
-                            <button className=' bg-[#A2171C] text-white mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
+                    <div class="text-cont z-50 flex flex-col justify-center items-center">
+                        <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl text">Hackentine's Quest</p>
+                        <a className='z-20' href="">
+                            <button className=' bg-[#A2171C] text-white z-20 mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
                         </a>
+                    <div className="details mt-12 w-full h-16 flex justify-between items-center opacity-0 z-50">
+                        <div className="flex items-center w-[50%] justify-around h-full mr-6">
+                            <img className='h-full' src={calendar} alt="" />
+                            <p className='chip text-white text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
+                        </div>
+                        <div className="flex items-center w-[50%] justify-around h-full ml-6">
+                            <img className='h-full' src={venue} alt="" />
+                            <p className='chip text-white text-4xl opacity-75'>D1 Auditorium</p>
+                        </div>
                     </div>
+                    </div>
+
                 </div>
             </div>
         </div>

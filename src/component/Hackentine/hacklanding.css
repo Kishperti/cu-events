@@ -342,15 +342,18 @@
 .text{
     color: #A2171C;
     z-index: 3;
-    transform: translateY(-10px);
     transition: .2s;
     text-shadow: 2px 2px 4px #A2171C;
 }
-.text p{
+.text-cont p{
     
     animation: blink 1s linear forwards;
 }
 .btn{
+    animation: blink 1s linear forwards 2s;
+}
+.text-cont .details{
+    
     animation: blink 1s linear forwards 3s;
 }
 @keyframes blink {
