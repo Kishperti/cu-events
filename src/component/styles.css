@@ -51,6 +51,6 @@ body {
   background: radial-gradient(circle, transparent 20%, #0E0D0D 20%, #0E0D0D 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #0E0D0D 20%, #0E0D0D 80%, transparent 80%, transparent) 100px 100px, linear-gradient(#dc26261b 8px, transparent 8px) 0 -4px, linear-gradient(90deg, #dc26261b 8px, #0E0D0D 8px) -4px 0;
   background-size: 200px 200px, 200px 200px, 100px 100px, 100px 100px;
 }
-.overlay{
+.team-overlay{
   background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(70, 1, 1, 0.71));
 }
