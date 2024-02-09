@@ -50,28 +50,28 @@ export default function App() {
           <img className="w-full h-full object-cover" src={slide1} alt="" />
         </SwiperSlide>
         <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-          <img className="w-full h-full" src={slide2} alt="" />
+          <img className="w-full h-full object-cover" src={slide2} alt="" />
         </SwiperSlide>
         <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-          <img className="w-full h-full" src={slide3} alt="" />
+          <img className="w-full h-full object-cover" src={slide3} alt="" />
         </SwiperSlide>
-        {banner.map((background, index) => (
+        {/* {banner.map((background, index) => (
           <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
             <img className="w-full h-full" src={banner[0][0]} alt="" />
           </SwiperSlide>
-        ))}
-        {Array.isArray(banner) &&
+        ))} */}
+        {/* {Array.isArray(banner) &&
           banner.map((background, index) => (
             <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
               <img className="w-full h-full" src={banner[0][1]} alt="" />
             </SwiperSlide>
-          ))}
-        {Array.isArray(banner) &&
+          ))} */}
+        {/* {Array.isArray(banner) &&
           banner.map((background, index) => (
             <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
               <img className="w-full h-full" src={banner[0][2]} alt="" />
             </SwiperSlide>
-          ))}
+          ))} */}
 
       </Swiper>
     </>
