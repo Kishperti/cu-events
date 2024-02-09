@@ -1,0 +1,40 @@
+
+.schedule-clouds {
+    opacity: 1;
+    position: absolute;
+    background-color: #ff6e73;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: -5px;
+    left: -35px;
+    box-shadow: 60px 30px #ff6e73, 138px 20px #ff6e73, 190px 20px #ff6e73, 260px 50px #ff6e73, 300px 20px #ff6e73, 360px 10px #ff6e73, 400px 10px #ff6e73, 460px 20px #ff6e73, 520px 10px #ff6e73, 580px 20px #ff6e73, 640px 10px #ff6e73, 700px 20px #ff6e73, 760px 10px #ff6e73, 820px 20px #ff6e73, 880px 10px #ff6e73, 940px 20px #ff6e73, 1000px 10px #ff6e73, 1060px 20px #ff6e73, 1120px 10px #ff6e73, 1180px 20px #ff6e73, 1240px 10px #ff6e73, 1300px 20px #ff6e73, 1360px 10px #ff6e73, 1420px 20px #ff6e73, 1480px 10px #ff6e73, 1540px 20px #ff6e73, 1600px 10px #ff6e73, 1660px 20px #ff6e73, 1720px 10px #ff6e73, 1780px 20px #ff6e73, 1840px 10px #ff6e73, 1900px 20px #ff6e73, 1960px 10px #ff6e73, 2020px 20px #ff6e73, 2080px 10px #ff6e73, 2140px 20px #ff6e73, 2200px 10px #ff6e73, 2260px 20px #ff6e73, 2320px 10px #ff6e73, 2380px 20px #ff6e73, 2440px 10px #ff6e73, 2500px 20px #ff6e73, 2560px 10px #ff6e73, 2620px 20px #ff6e73, 2680px 10px #ff6e73, 2740px 20px #ff6e73;
+    opacity: 0.95;
+    animation: slide 5s ease infinite alternate-reverse;
+}
+.schedule-clouds::after{
+    opacity: 0.85;
+    content: "";
+    position: absolute;
+    background-color: #ff9396;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    bottom: 40px;
+    left: -40px;
+    box-shadow: 50px 20px #ff9396, 100px 30px #ff9396, 150px 40px #ff9396, 200px 15px #ff9396, 260px 30px #ff9396, 330px 30px #ff9396, 380px 10px #ff9396, 450px 20px #ff9396, 520px 10px #ff9396, 580px 20px #ff9396, 640px 10px #ff9396, 700px 20px #ff9396, 760px 10px #ff9396, 820px 20px #ff9396, 880px 10px #ff9396, 940px 20px #ff9396, 1000px 10px #ff9396, 1060px 20px #ff9396, 1120px 10px #ff9396, 1180px 20px #ff9396, 1240px 10px #ff9396, 1300px 20px #ff9396, 1360px 10px #ff9396, 1420px 20px #ff9396, 1480px 10px #ff9396, 1540px 20px #ff9396, 1600px 10px #ff9396, 1660px 20px #ff9396, 1720px 10px #ff9396, 1780px 20px #ff9396, 1840px 10px #ff9396, 1900px 20px #ff9396, 1960px 10px #ff9396, 2020px 20px #ff9396, 2080px 10px #ff9396, 2140px 20px #ff9396, 2200px 10px #ff9396, 2260px 20px #ff9396, 2320px 10px #ff9396, 2380px 20px #ff9396, 2440px 10px #ff9396, 2500px 20px #ff9396, 2560px 10px #ff9396, 2620px 20px #ff9396, 2680px 10px #ff9396, 2740px 20px #ff9396;
+    animation: slide 4.5s ease infinite alternate-reverse 1s;
+}
+.schedule-clouds::before{
+    opacity: 0.95;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 5;
+    bottom: 70px;
+    left: -20px;
+    background-color: #A2171C;
+    box-shadow: 55px 30px #A2171C, 125px 10px #A2171C, 175px 20px #A2171C, 250px 10px #A2171C, 320px 5px #A2171C, 380px 10px #A2171C, 440px 20px #A2171C, 500px 10px #A2171C, 560px 20px #A2171C, 620px 10px #A2171C, 680px 20px #A2171C, 740px 10px #A2171C, 800px 20px #A2171C, 860px 10px #A2171C, 920px 20px #A2171C, 980px 10px #A2171C, 1040px 20px #A2171C, 1100px 10px #A2171C, 1160px 20px #A2171C, 1220px 10px #A2171C, 1280px 20px #A2171C, 1340px 10px #A2171C, 1400px 20px #A2171C, 1460px 10px #A2171C, 1520px 20px #A2171C, 1580px 10px #A2171C, 1640px 20px #A2171C, 1700px 10px #A2171C, 1760px 20px #A2171C, 1820px 10px #A2171C, 1880px 20px #A2171C, 1940px 10px #A2171C, 2000px 20px #A2171C, 2060px 10px #A2171C, 2120px 20px #A2171C, 2180px 10px #A2171C, 2240px 20px #A2171C, 2300px 10px #A2171C, 2360px 20px #A2171C, 2420px 10px #A2171C, 2480px 20px #A2171C, 2540px 10px #A2171C, 2600px 20px #A2171C, 2660px 10px #A2171C, 2720px 20px #A2171C, 2780px 10px #A2171C;
+    animation: slide 5.5s ease infinite alternate-reverse 2s;
+}
