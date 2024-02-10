@@ -6,7 +6,7 @@ import Attractions from '../component/Hackentine/Attractions'
 import Sponsors from '../component/Hackentine/Sponsors'
 import Faq from '../component/Hackentine/Faq'
 import HackNavBar from '../component/Hackentine/HackNavBar'
-import Footer from '../component/Footer';
+import HackFooter from '../component/Hackentine/HackFooter'
 
 export default function Hackentine() {
   return (
@@ -18,6 +18,7 @@ export default function Hackentine() {
         <Attractions id="attractions"/>
         <Sponsors id="hacksponsors"/>
         <Faq id="hackfaq"/>
+        <HackFooter/>
     </div>
   )
 }
