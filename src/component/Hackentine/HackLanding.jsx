@@ -60,7 +60,7 @@ export default function HackLanding() {
 
                     </div>
                     <div class="text-cont z-50 flex flex-col justify-center items-center">
-                        <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl text">Hackentine's Quest</p>
+                        <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl text opacity-0">Hackentine's Quest</p>
                         <a className='z-20' href="">
                             <button className=' bg-[#A2171C] text-[#ffe8e8] z-20 mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
                         </a>

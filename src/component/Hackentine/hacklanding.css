@@ -356,15 +356,14 @@
     text-shadow: 2px 2px 4px #ffe8e8;
 }
 .text-cont p{
-    
-    animation: blink 1s linear forwards;
+    animation: blink 1s linear forwards 4s;
 }
 .btn{
-    animation: blink 1s linear forwards 2s;
+    animation: blink 1s linear forwards 4.5s;
 }
 .text-cont .details{
     
-    animation: blink 1s linear forwards 3s;
+    animation: blink 1s linear forwards 5s;
 }
 @keyframes blink {
     0% {
