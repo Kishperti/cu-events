@@ -17,7 +17,7 @@ export default function HackLanding() {
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
-                        <div className="heartTwo">
+                        <div className="heartTwo hidden lg:block">
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
@@ -29,7 +29,7 @@ export default function HackLanding() {
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
-                        <div className="heartFive">
+                        <div className="heartFive hidden lg:block">
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
@@ -45,7 +45,7 @@ export default function HackLanding() {
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
-                        <div className="heartNine">
+                        <div className="heartNine hidden lg:block">
                             <div className="left-side"></div>
                             <div className="right-side"></div>
                         </div>
@@ -60,18 +60,18 @@ export default function HackLanding() {
 
                     </div>
                     <div className="text-cont z-50 flex flex-col justify-center items-center">
-                        <p className="chip text-center text-[3.5rem] px-4 lg:text-8xl text opacity-0">Hackentine's Quest</p>
+                        <p className="chip text-center text-5xl px-4 lg:text-8xl text opacity-0 -mt-24 lg:mt-0">Hackentine's Quest</p>
                         <a className='z-20' href="">
-                            <button className=' bg-[#A2171C] text-[#ffe8e8] z-20 mt-8 px-5 opacity-0 btn py-3 text-2xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
+                            <button className=' bg-[#A2171C] text-[#ffe8e8] z-20 mt-8 px-5 opacity-0 btn py-3 text-xl lg:text-3xl transition-all hover:scale-95 cursor-pointer'>Register with Devfolio</button>
                         </a>
-                    <div className="details mt-12 w-full h-16 flex justify-between items-center opacity-0 z-50">
-                        <div className="flex items-center w-[50%] justify-around h-full mr-6">
+                    <div className="details px-8 lg:px-0 lg:mt-12 w-full flex flex-col mt-8 lg:flex-row justify-center lg:justify-between items-center opacity-0 z-50">
+                        <div className="flex items-center w-full lg:w-[50%] justify-center my-2 lg:my-0 lg:justify-around h-8 lg:h-16 lg:mr-6">
                             <img className='h-full' src={calendar} alt="" />
-                            <p className='chip text-[#ffe8e8] text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
+                            <p className='chip text-[#ffe8e8] text-xl lg:text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
                         </div>
-                        <div className="flex items-center w-[50%] justify-around h-full ml-6">
+                        <div className="flex items-center w-full lg:w-[50%] justify-center my-2 lg:my-0 lg:justify-around h-8 lg:h-16 lg:ml-6">
                             <img className='h-full' src={venue} alt="" />
-                            <p className='chip text-[#ffe8e8] text-4xl opacity-75'>D1 Auditorium</p>
+                            <p className='chip text-[#ffe8e8] text-xl lg:text-4xl opacity-75'>D1 Auditorium</p>
                         </div>
                     </div>
                     </div>
