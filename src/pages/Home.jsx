@@ -6,7 +6,7 @@ import About from '../component/About';
 import Events from '../component/Events';
 import Achievements from '../component/Achievements';
 import Partner from '../component/Partner';
-import HackFooter from '../component/HackFooter';
+import Footer from '../component/Footer';
 import StaticEvents from '../component/StaticEvent';
 import StaticAchievements from '../component/StaticAchievements';
 
@@ -22,7 +22,7 @@ export default function Home() {
             {/* <Achievements id="achievements"/> */}
             <StaticAchievements id="sachievements"/>
             <Partner id="partner"/>
-            <HackFooter id="contact"/>
+            <Footer id="contact"/>
         </div>
     )
 }
