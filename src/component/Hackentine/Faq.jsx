@@ -16,7 +16,7 @@ const Faq = () => {
     };
 
     return (
-        <div className="main relative min-h-screen w-full bg-[#55141F] flex flex-col items-center justify-start pt-[80px] lg:pt-[100px] pb-[200px]">
+        <div id='hackfaq' className="main relative min-h-screen w-full bg-[#55141F] flex flex-col items-center justify-start pt-[80px] lg:pt-[100px] pb-[200px]">
             <div className="over"></div>
             <div className="about-clouds z-40"></div>
             <div className="chip gif text-center text-5xl lg:text-8xl text-alt-white">

@@ -4,7 +4,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaPhone } from "react-icons/fa6";
 import { IoLocation } from "react-icons/io5";
-import footerlogo from "../assets/logonav.png";
+import footerlogo from "../../assets/logonav.png";
 import { Link } from "react-router-dom";
 import {
   FaDribbbleSquare,
@@ -17,17 +17,19 @@ import {
 
 const HackFooter = () => {
   return (
-    <div id={"contact"} className="relative w-full">
-      <div className="bg-[#091022] lg:mt-[12%]">
-        <div className="w-full px-3 mx-auto mt-60 lg:mt-0 py-12 pt-24 flex flex-col lg:flex-row gap-4 text-gray-300">
+    <div id={"hackcontact"} className="relative w-full mt-0">
+      <div className="bg-[#091022]">
+        <div className="w-full px-3 mx-auto lg:mt-0 py-12 pt-24 flex flex-col lg:flex-row gap-4 text-gray-300">
           <div className="w-full lg:pl-8 lg:w-[60%]">
-            <h1 className="w-full text-3xl text-[#E2012D]">
+            <Link to="/"> 
+            <h1 className="w-full text-3xl text-[#A2171C]">
               <img
                 src={footerlogo}
                 alt=""
                 className="w-[25%] h-[10%px]"
               />
             </h1>
+            </Link>
             <p className="text-white text-[15px] font-maven mt-4 text-justify lg:mr-12">
               "CAC - The Face of Chandigarh University", 
               Public & Student Relations Community, CU <br/>
@@ -45,14 +47,15 @@ const HackFooter = () => {
           </div>
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0">
             <h1 className="font-bold text-white text-xl my-2 font-oswald">
-              QUICK <span className="text-[#E2102d]">LINKS</span>
+              QUICK <span className="text-[#A2171C]">LINKS</span>
             </h1>
             <div className="font-maven cursor-pointer flex flex-col justify-start items-start">
-              <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
-              <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
-              <a href="#events" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
-              <a href="#achievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
-              <a href="#partners" className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</a>
+              <a href="#hackhome" className="py-2 text-sm hover:text-[#A2171C]">HOME</a>
+              <a href="#hackabout" className="py-2 text-sm hover:text-[#A2171C]">ABOUT</a>
+              <a href="#hackschedule" className="py-2 text-sm hover:text-[#A2171C]">SCHEDULE</a>
+              <a href="#attractions" className="py-2 text-sm hover:text-[#A2171C]">EVENTS</a>
+              <a href="#hacksponsors" className="py-2 text-sm hover:text-[#A2171C]">SPONSORS</a>
+              <a href="#hackfaq" className="py-2 text-sm hover:text-[#A2171C]">FAQ'S</a>
             </div>
           </div>
           <div className="w-full lg:w-[20%] mb-6 lg:mb-0 cursor-pointer">
@@ -72,7 +75,7 @@ const HackFooter = () => {
             </ul>
           </div>
         </div>
-        <div className="w-full bg-[#E2012D] py-4 text-center text-white">
+        <div className="w-full bg-[#A2171C] py-4 text-center text-white">
           COPYRIGHT CAC. ALL RIGHT RESERVED
         </div>
       </div>

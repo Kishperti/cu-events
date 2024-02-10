@@ -2,8 +2,8 @@ import React from 'react'
 import "./hackabout.css"
 export default function HackAbout() {
   return (
-    <div id='hackabout' className="grid grid-cols-1 relative lg:grid-cols-2 bg-[#55141F] w-full h-full py-[150px] lg:pb-[200px] lg:pt-[270px]">
-    <div class="about-clouds z-20"></div>
+    <div id={'hackabout'} className="grid grid-cols-1 relative lg:grid-cols-2 bg-[#55141F] w-full h-full py-[150px] lg:pb-[200px] lg:pt-[270px]">
+    <div className="about-clouds z-20"></div>
     <div className="over2"></div>
         <div className="about-container h-full grid place-items-center cursor-pointer transition-all hover:translate-y-[-10px]">
                 <div className="about-envelope-wrapper about-flap">

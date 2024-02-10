@@ -4,8 +4,8 @@ import './schedule.css';
 
 export default function Schedule() {
     return (
-        <div className="main relative min-h-screen w-full bg-[#091022] flex flex-col items-center justify-start pt-[120px] pb-[200px]">
-            <div class="schedule-clouds z-40"></div>
+        <div id={"hackschedule"} className="main relative min-h-screen w-full bg-[#091022] flex flex-col items-center justify-start pt-[120px] pb-[200px]">
+            <div className="schedule-clouds z-40"></div>
             <div className="chip text-center text-5xl text-[#A2171C] lg:text-8xl text">
                 Event Calendar
             </div>

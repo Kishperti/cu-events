@@ -3,9 +3,9 @@ import "./attractions.css"
 import valen1 from "../../assets/valen1.png"
 export default function Attractions() {
     return (
-        <div className="bg-[#55141F] relative h-full w-full flex flex-col items-center justify-start pt-[120px] pb-[200px]">
+        <div id={'attractions'} className="bg-[#55141F] relative h-full w-full flex flex-col items-center justify-start pt-[120px] pb-[200px]">
             <div className="over"></div>
-            <div class="about-clouds z-40"></div>
+            <div className="about-clouds z-40"></div>
             <div className="chip gif text-center text-5xl lg:text-8xl text-alt-white">
                 Event Store
             </div>
