@@ -1,39 +1,22 @@
-import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-import tri from "../assets/tri.png";
-import React, { useState } from 'react';
+
+
+import React, { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css/navigation';
 import './styles.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import sevent1 from "../assets/sevent1.jpg";
-import sevent2 from "../assets/sevent2.jpg";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
+import tri from "../assets/tri.png";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { FaTimes } from 'react-icons/fa';
+import { projectFirestore } from "../firebase";
 
-// Static data array
-const eventData = [
-  {
-    title: "DD Robocon",
-    description: "🤖🎉 Chandigarh University brings you Exciting news! Introducing DD Robocon India 2024, powered by IIT Delhi! 🚀 Get ready for an exhilarating showdown as robots race against time to conquer complex tasks. This event isn't just about competition; it's about forging lasting bonds and propelling engineering and broadcasting technologies to unprecedented heights! Join us at Thyagraj Stadium, New Delhi, on Sat-Sun, 13-14 July 2024, for an unforgettable celebration of innovation and unity! Don't miss out on this opportunity to shape the future! 🌟",
-    imageUrl: sevent1,
-    linkEvent: "http://www.ddrobocon.in/",
-  },
-  {
-    title: "Autodesk Fusion",
-    description: "🌱 Chandigarh University Academic Competitions Calling all design visionaries! 🎨 Dive into the Autodesk Fusion 360 Digital Design Challenge 2024 and unleash your creativity to shape the future of agriculture. 🚜💡 Prepare your students to master Fusion 360, the industry-leading 3D modeling software, and stand a chance to win big! 🏆 Register now and empower your students to showcase their innovative solutions and compete against the brightest minds. 💻✨ #AutodeskDesignChallenge #letspromotecu",
-    imageUrl: sevent2,
-    linkEvent: "",
-  },
-
-  // Add more events as needed
-];
-
-const ModuleBox = ({ onClose, title, description, imageUrl, linkEvent }) => {
+const ModuleBox = ({ onClose, EventName, Description, Image, Link }) => {
   const redirectToEvent = () => {
-    // Redirect to the specified linkEvent
-    window.location.href = linkEvent;
+    // Redirect to the specified Link
+    window.location.href = Link;
   };
 
   return (
@@ -46,14 +29,14 @@ const ModuleBox = ({ onClose, title, description, imageUrl, linkEvent }) => {
           <FaTimes />
         </button>
         <div className="flex flex-col w-full lg:w-1/2 pt-4">
-          <h1 className='text-white text-3xl lg:text-6xl font-bold font-oswald mb-2 lg:mb-4'>{title}</h1>
+          <h1 className='text-white text-3xl lg:text-6xl font-bold font-oswald mb-2 lg:mb-4'>{EventName}</h1>
           <p className="text-sm mt-2 lg:mt-0 lg:text-xl lg:py-8 text-justify w-full leading-6 lg:leading-8 font-maven text-white">
-            {description}
+            {Description}
           </p>
           <button onClick={redirectToEvent} className="bg-[#E2012D] text-white py-2 lg:py-3 w-[65%] lg:w-[45%] mt-7 flex justify-evenly items-center rounded-tr-full hover:bg-white hover:text-[#E2012D] transition-all duration-300 ease-in-out cursor-pointer font-oswald text-xl uppercase tracking-widest"> Register&nbsp; &nbsp; <FaLongArrowAltRight /> </button>
         </div>
         <div className="w-full h-[180px] mb-2 lg:mb-0 lg:w-[470px] lg:h-[380px] rounded-tl-[80px] overflow-hidden">
-          <img src={imageUrl} className="w-full h-full" alt="" />
+          <img src={Image} className="w-full h-full" alt="" />
         </div>
       </div>
     </div>
@@ -61,8 +44,23 @@ const ModuleBox = ({ onClose, title, description, imageUrl, linkEvent }) => {
 };
 
 const StaticEvents = () => {
+  const [eventData, setEventData] = useState([]);
   const [isBoxOpen, setBoxOpen] = useState(false);
   const [currentIndex, setCurrentIndex] = useState(null);
+
+  useEffect(() => {
+    const fetchEventData = async () => {
+      try {
+        const eventsCollection = await projectFirestore.collection('event').get();
+        const eventsData = eventsCollection.docs.map(doc => doc.data());
+        setEventData(eventsData);
+      } catch (error) {
+        console.error('Error fetching events:', error);
+      }
+    };
+
+    fetchEventData();
+  }, []);
 
   const openBox = (index) => {
     setBoxOpen(true);
@@ -78,6 +76,7 @@ const StaticEvents = () => {
       <img src={tri} alt="" className='absolute top-0 left-[50%] -translate-x-1/2' />
       <h1 className='text-[#091022] text-6xl font-bold font-oswald text-center mb-4'>ONGOING <span className='text-[#E2012D]'>EVENTS</span></h1>
       <div className='text-[#E2012D] text-4xl flex justify-center items-center'><MdKeyboardDoubleArrowDown /></div>
+
       <div className="box hidden lg:block">
         <Swiper
           slidesPerView={3}
@@ -98,43 +97,44 @@ const StaticEvents = () => {
           {eventData.map((event, index) => (
             <SwiperSlide key={index}>
               <div className="relative shadow-lg w-[400px] h-[400px] grid place-items-center cursor-pointer transition-all hover:scale-105 hover:shadow-2xl shadow-[#ffffff17]">
-                <img src={event.imageUrl} onClick={() => openBox(index)} className="absolute h-full w-full top-0 left-0 object-cover" alt="" />
+                <img src={event.Image} onClick={() => openBox(index)} className="absolute h-full w-full top-0 left-0 object-cover" alt="" />
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
-        {/* Mobile Slider */}
-        <div className="box block lg:hidden">
-          <Swiper
-            slidesPerView={1}
-            centeredSlides={true}
-            spaceBetween={100}
-            pagination={{
-              clickable: true,
-            }}
-            modules={[Pagination, Navigation, Autoplay]}
-            autoplay={{
-              delay: 2500,
-              disableOnInteraction: false,
-            }}
-            loop={true}
-            className="mySwiper px-16 mt-12"
-          >
-            {eventData.map((event, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all hover:shadow-2xl">
-                  <img
-                    src={event.imageUrl}
-                    onClick={() => openBox(index)}
-                    className="absolute top-0 left-0 object-cover"
-                    alt=""
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
+
+      <div className="box block lg:hidden">
+        <Swiper
+          slidesPerView={1}
+          centeredSlides={true}
+          spaceBetween={100}
+          pagination={{
+            clickable: true,
+          }}
+          modules={[Pagination, Navigation, Autoplay]}
+          autoplay={{
+            delay: 2500,
+            disableOnInteraction: false,
+          }}
+          loop={true}
+          className="mySwiper px-16 mt-12"
+        >
+          {eventData.map((event, index) => (
+            <SwiperSlide key={index}>
+              <div className="relative w-[280px] h-[350px] grid place-items-center shadow-lg cursor-pointer transition-all hover:shadow-2xl">
+                <img
+                  src={event.Image}
+                  onClick={() => openBox(index)}
+                  className="absolute top-0 left-0 object-cover"
+                  alt=""
+                />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
       {isBoxOpen && <ModuleBox onClose={closeBox} {...eventData[currentIndex]} />}
     </div>
   );
