@@ -19,7 +19,7 @@ import sachiv5 from "../assets/sachiv5.png";
 const achivData = [
   {
     title: "DD Robocon",
-    description: "🤖🎉 Chandigarh University brings you Exciting news! Introducing DD Robocon India 2024, powered by IIT Delhi! 🚀 Get ready for an exhilarating showdown as robots race against time to conquer complex tasks. This event isn't just about competition; it's about forging lasting bonds and propelling engineering and broadcasting technologies to unprecedented heights! Join us at Thyagraj Stadium, New Delhi, on Sat-Sun, 13-14 July 2024, for an unforgettable celebration of innovation and unity! Don't miss out on this opportunity to shape the future! 🌟",
+    description: "🤖🎉 Chandigarh University brings you Exciting news! Introducing DD Robocon India 2024, powered by IIT Delhi! 🚀 Get ready for an exhilarating showdown as robots race against time to conquer complex tasks. This event isn't just about competition; it's about forging lasting bonds and propelling engineering and broadcasting technologies to unprecedented heights! Join us at Thyagraj Stadium, New Delhi, on Sat-Sun, 13-14 July 2024, for an unforgettable celebration of innovation and unity! Don't miss out on this opportunity to shape the future! 🌟", 
     imageUrl: sachiv1,
   },
   {
