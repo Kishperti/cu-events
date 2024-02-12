@@ -5,13 +5,13 @@ import { initializeApp } from "firebase/app";
 import { getStorage } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCIG5pta_bM2b7Yd36ichHe6f8eJYvq-VI",
-  authDomain: "cac-competitions.firebaseapp.com",
-  projectId: "cac-competitions",
-  storageBucket: "cac-competitions.appspot.com",
-  messagingSenderId: "418066331142",
-  appId: "1:418066331142:web:b025ea3152b7136a8e3587",
-  measurementId: "G-24GB2B6VML"
+  apiKey: "AIzaSyAj5a2GGtkpMV1fDk1dDVP1mzKDSxB9mbk",
+  authDomain: "cac-competitions-b7dcc.firebaseapp.com",
+  projectId: "cac-competitions-b7dcc",
+  storageBucket: "cac-competitions-b7dcc.appspot.com",
+  messagingSenderId: "684936810582",
+  appId: "1:684936810582:web:d02d433f0e90b4df29ebf7",
+  measurementId: "G-ZN1BV2QTH8"
 };
 
 // Initialize Firebase
