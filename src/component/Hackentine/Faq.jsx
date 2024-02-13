@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import './faq.css'
 const Faq = () => {
     const faqData = [
-        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ', answer: 'Expedita impedit distinctio sunt aut rem delectus veritatis, iusto voluptatem ex est sapiente minima consectetur odio, enim.' },
-        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ', answer: 'Expedita impedit distinctio sunt aut rem delectus veritatis, iusto voluptatem ex est sapiente minima consectetur odio, enim.' },
-        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ', answer: 'Expedita impedit distinctio sunt aut rem delectus veritatis, iusto voluptatem ex est sapiente minima consectetur odio, enim.' },
-        { question: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. ', answer: 'Expedita impedit distinctio sunt aut rem delectus veritatis, iusto voluptatem ex est sapiente minima consectetur odio, enim.' },
+        { question: 'What will be covered in the Basics + Hands-on Smart Contract Dev Session?', answer: 'The session will cover fundamental concepts of smart contracts, providing a hands-on experience for participants to delve into the development process.' },
+        { question: 'Do I need any prior coding experience to attend the workshop?', answer: 'While basic coding knowledge is beneficial, the workshop is designed to accommodate participants at various skill levels, including beginners.' },
+        { question: 'What tools or software will be required for the hands-on session?', answer: 'Detailed instructions on required tools and software will be provided prior to the session. Participants are encouraged to come prepared with the necessary installations.' },
+        { question: 'Will there be opportunities for interactive learning and asking questions during the workshop?', answer: 'Absolutely! The workshop is structured to encourage participant engagement, including Q&A sessions and interactive discussions to ensure a comprehensive learning experience.' },
+        { question: 'Is there a specific coding language covered in the hands-on session?', answer: 'The session will primarily focus on a language commonly used for smart contract development, ensuring participants gain practical insights and skills applicable to real-world scenarios.' },
+        { question: 'Can I bring my own project idea to work on during the hands-on session?', answer: 'While the workshop will have a structured curriculum, participants are encouraged to apply their learnings to personal projects. Mentors will be available to provide guidance and support.' },
+        { question: 'Will there be any follow-up resources or materials provided after the workshop?', answer: 'Yes, participants will receive post-workshop resources, including reference materials, code samples, and additional learning materials to support their ongoing development journey.' },
+        { question: 'How can I register for the Basics + Hands-on Smart Contract Dev Session?', answer: 'Registration details will be available on our event website. Keep an eye out for announcements and secure your spot for this hands-on coding experience.' },
         // Add more FAQ items as needed
     ];
 

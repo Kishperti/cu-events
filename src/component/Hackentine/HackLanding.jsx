@@ -67,11 +67,11 @@ export default function HackLanding() {
                     <div className="details px-8 lg:px-0 lg:mt-12 w-full flex flex-col mt-8 lg:flex-row justify-center lg:justify-between items-center opacity-0 z-50">
                         <div className="flex items-center w-full lg:w-[50%] justify-center my-2 lg:my-0 lg:justify-around h-8 lg:h-16 lg:mr-6">
                             <img className='h-full' src={calendar} alt="" />
-                            <p className='chip text-[#ffe8e8] text-xl lg:text-4xl ml-3 opacity-75'>27 <sup>th</sup> Feb, 2024</p>
+                            <p className='chip text-[#ffe8e8] text-xl lg:text-3xl ml-3 opacity-75'>21-24 <sup>th</sup> Feb, 2024 <sub className='text-xs'>Online</sub></p>
                         </div>
                         <div className="flex items-center w-full lg:w-[50%] justify-center my-2 lg:my-0 lg:justify-around h-8 lg:h-16 lg:ml-6">
-                            <img className='h-full' src={venue} alt="" />
-                            <p className='chip text-[#ffe8e8] text-xl lg:text-4xl opacity-75'>D1 Auditorium</p>
+                            <img className='h-full' src={calendar} alt="" />
+                            <p className='chip text-[#ffe8e8] text-xl lg:text-3xl opacity-75'>27-28 <sup>th</sup> Feb, 2024 <sub className='text-xs'>Offline</sub></p>
                         </div>
                     </div>
                     </div>
