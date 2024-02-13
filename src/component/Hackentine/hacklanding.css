@@ -81,7 +81,7 @@
     position: absolute;
     left: 2%;
     top: 120%;
-    animation : upZero 4s linear forwards;
+    animation : upZero 2s linear forwards;
 }
 @keyframes upZero {
     0% {
@@ -97,7 +97,7 @@
     position: absolute;
     left: 5%;
     top: 120%;
-    animation : upOne 4s linear forwards;
+    animation : upOne 2s linear forwards;
 }
 
 @keyframes upOne {
@@ -113,7 +113,7 @@
     position: absolute;
     left: 15%;
     top: 120%;
-    animation : upTwo 4s linear forwards .1s;
+    animation : upTwo 2s linear forwards .1s;
 }
 
 @keyframes upTwo {
@@ -129,7 +129,7 @@
     position: absolute;
     left: 25%;
     top: 120%;
-    animation : upThree 4s linear forwards .2s;
+    animation : upThree 2s linear forwards .2s;
 }
 
 @keyframes upThree {
@@ -146,7 +146,7 @@
     position: absolute;
     left: 35%;
     top: 120%;
-    animation : upFour 4s linear forwards .1s;
+    animation : upFour 2s linear forwards .1s;
 }
 
 @keyframes upFour {
@@ -163,7 +163,7 @@
     position: absolute;
     left: 45%;
     top: 120%;
-    animation : upFive 4s linear forwards .2s;
+    animation : upFive 2s linear forwards .2s;
 }
 
 @keyframes upFive {
@@ -180,7 +180,7 @@
     position: absolute;
     left: 55%;
     top: 120%;
-    animation : upSix 4s linear forwards .1s;
+    animation : upSix 2s linear forwards .1s;
 }
 
 @keyframes upSix {
@@ -197,7 +197,7 @@
     position: absolute;
     left: 65%;
     top: 120%;
-    animation : upSeven 4s linear forwards .2s;
+    animation : upSeven 2s linear forwards .2s;
 }
 
 @keyframes upSeven {
@@ -214,7 +214,7 @@
     position: absolute;
     left: 75%;
     top: 120%;
-    animation : upEight 4s linear forwards .1s;
+    animation : upEight 2s linear forwards .1s;
 }
 
 @keyframes upEight {
@@ -231,7 +231,7 @@
     position: absolute;
     left: 85%;
     top: 120%;
-    animation : upNine 4s linear forwards .2s;
+    animation : upNine 2s linear forwards .2s;
 }
 
 @keyframes upNine {
@@ -248,7 +248,7 @@
     position: absolute;
     left: 95%;
     top: 120%;
-    animation : upTen 4s linear forwards .1s;
+    animation : upTen 2s linear forwards .1s;
 }
 
 @keyframes upTen {
@@ -265,7 +265,7 @@
     position: absolute;
     left: 98%;
     top: 120%;
-    animation : upZero 4s linear forwards;
+    animation : upZero 2s linear forwards;
 }
 @keyframes upZero {
     0% {
@@ -356,14 +356,14 @@
     text-shadow: 2px 2px 4px #ffe8e8;
 }
 .text-cont p{
-    animation: blink 1s linear forwards 4s;
+    animation: blink 1s linear forwards 2s;
 }
 .btn{
-    animation: blink 1s linear forwards 4.5s;
+    animation: blink 1s linear forwards 2.2s;
 }
 .text-cont .details{
     
-    animation: blink 1s linear forwards 5s;
+    animation: blink 1s linear forwards 2.5s;
 }
 @keyframes blink {
     0% {
