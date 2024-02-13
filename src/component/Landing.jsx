@@ -5,33 +5,25 @@ import "swiper/css/pagination";
 import "./styles.css";
 import { Autoplay } from "swiper/modules";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import slide1 from "../assets/slide1.svg";
-import slide2 from "../assets/slide2.svg";
+import { projectFirestore } from "../firebase";
 import slide3 from "../assets/slide3.png";
-import axios from "axios";
+import { Link } from "react-router-dom";
 
-export default function App() {
-  const [banner, setbackBanner] = useState([]);
+const LandingBanner = () => {
+  const [bannerData, setBannerData] = useState([]);
+
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchBannerData = async () => {
       try {
-        const events = await axios.get(
-          "http://localhost:3000/cac/v1/getOngoingEvents/all"
-        );
-
-
-        // Check if there are events
-        if (events.data.data.length > 0) {
-          // Use the backgroundBanner of the first event
-          const firstEventBackgrounds = events.data.data[0].backgroundBanner;
-          setbackBanner(firstEventBackgrounds);
-        }
+        const bannerCollection = await projectFirestore.collection('banner').get();
+        const bannerData = bannerCollection.docs.map(doc => doc.data());
+        setBannerData(bannerData);
       } catch (error) {
-        console.error("Error fetching data:", error);
+        console.error("Error fetching banner data:", error);
       }
     };
 
-    fetchData();
+    fetchBannerData();
   }, []);
 
   return (
@@ -44,36 +36,23 @@ export default function App() {
           disableOnInteraction: false,
         }}
         modules={[Autoplay]}
-        className="mySwiper w-full h-[30vh] md:h-[60vh] lg:h-[90vh]"
+        className="mySwiper w-full h-[30vh] md:h-[60vh] lg:h-[100vh]"
       >
-        <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-          <img className="w-full h-full object-cover" src={slide1} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-          <img className="w-full h-full object-cover" src={slide2} alt="" />
-        </SwiperSlide>
-        <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
+
+        <SwiperSlide className="relative w-full h-full flex flex-col swiper-slide1">
+          <Link to="/hackentine" className="cursor-pointer w-full h-full absolute top-0 left-0 z-20"></Link>
           <img className="w-full h-full object-cover" src={slide3} alt="" />
         </SwiperSlide>
-        {/* {banner.map((background, index) => (
-          <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-            <img className="w-full h-full" src={banner[0][0]} alt="" />
-          </SwiperSlide>
-        ))} */}
-        {/* {Array.isArray(banner) &&
-          banner.map((background, index) => (
-            <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-              <img className="w-full h-full" src={banner[0][1]} alt="" />
-            </SwiperSlide>
-          ))} */}
-        {/* {Array.isArray(banner) &&
-          banner.map((background, index) => (
-            <SwiperSlide className="w-full h-full flex flex-col swiper-slide1">
-              <img className="w-full h-full" src={banner[0][2]} alt="" />
-            </SwiperSlide>
-          ))} */}
 
+        {bannerData.map((banner, index) => (
+          <SwiperSlide key={index} className="relative w-full h-full flex flex-col swiper-slide1">
+            <a href={banner.Link} target="_blank" className="cursor-pointer w-full h-full absolute top-0 left-0 z-20"></a>
+            <img className="w-full h-full object-cover" src={banner.Image} alt="" />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
-}
+};
+
+export default LandingBanner;

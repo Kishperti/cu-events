@@ -21,7 +21,7 @@ export default function Envelope() {
                             </div>
                         </div>
                         <div className="overlay">
-                            <Link to="/hackentine">
+                            <Link to="/hackentinemain">
                             <button className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#A2171C] text-white mt-3 px-2 py-1 transition-all hover:scale-95 cursor-pointer'>Enter</button>
                             </Link>
                         </div>
