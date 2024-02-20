@@ -39,10 +39,10 @@ const LandingBanner = () => {
         className="mySwiper w-full h-[30vh] md:h-[60vh] lg:h-[100vh]"
       >
 
-        <SwiperSlide className="relative w-full h-full flex flex-col swiper-slide1">
+        {/* <SwiperSlide className="relative w-full h-full flex flex-col swiper-slide1">
           <Link to="/hackentine" className="cursor-pointer w-full h-full absolute top-0 left-0 z-20"></Link>
           <img className="w-full h-full object-cover" src={slide3} alt="" />
-        </SwiperSlide>
+        </SwiperSlide> */}
 
         {bannerData.map((banner, index) => (
           <SwiperSlide key={index} className="relative w-full h-full flex flex-col swiper-slide1">

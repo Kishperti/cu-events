@@ -65,8 +65,8 @@ const Footer = () => {
             <div className="font-maven cursor-pointer flex flex-col justify-start items-start">
               <a href="/" className="py-2 text-sm hover:text-[#E2012D]">HOME</a>
               <a href="#about" className="py-2 text-sm hover:text-[#E2012D]">ABOUT</a>
-              <a href="#events" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
-              <a href="#achievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
+              <a href="#sevents" className="py-2 text-sm hover:text-[#E2012D]">EVENTS</a>
+              <a href="#sachievements" className="py-2 text-sm hover:text-[#E2012D]">ACHIEVERS</a>
               <a href="#partners" className="py-2 text-sm hover:text-[#E2012D]">PARTNERS</a>
             </div>
           </div>

@@ -11,6 +11,8 @@ import raghav from '../assets/Raghav.png';
 import shivansh from '../assets/Shivansh.png';
 import anshika from '../assets/anshika.png';
 import aryan from '../assets/aryann.png';
+import manas from '../assets/Manas.png';
+
 
 const GlassCard = ({ image, title, details, name, designation, socialLinks }) => {
   const visibleSocialLinks = Object.keys(socialLinks).filter(
@@ -100,19 +102,19 @@ const GlassCardGrid = () => {
       details: "Looking forward to bolster Chandigarh University Academic Competitions in making more data driven decisions & Strategy. ",
       designation: "Data Strategy & Sponsorship Ex.",
       socialLinks: {
-        linkedin: "",
+        linkedin: "http://www.linkedin.com/in/manastiwari27",
         instagram: "",
       },
     },
     {
       id: 5,
       title: "Card 5",
-      image: harshit,
-      name: "Harshit",
+      image: manas,
+      name: "Manas",
       details: "Passionate about using data-driven insights to fuel business expansion.",
-      designation: "HR team",
+      designation: "Collaboration & Outreach Executive",
       socialLinks: {
-        linkedin: "https://www.instagram.com/harshit_simbal?igsh=MTliM3FrZjA5bnN2ag%3D%3D&utm_source=qr",
+        linkedin: "http://www.linkedin.com/in/manastiwari27",
         instagram: "",
       },
     },
@@ -172,12 +174,12 @@ const GlassCardGrid = () => {
       title: "Card 7",
       image: aryan,
       name: "Aryan",
-      details: "",
-      designation: "Collaboration & Outreach Executive",
+      details: "Creating Web Presence with 𝗛𝗧𝗠𝗟𝟱 | 𝗖𝗦𝗦𝟯 | 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁.REACT.js",
+      designation: "",
       socialLinks: {
-        linkedin: "http://www.linkedin.com/in/manastiwari27",
-        instagram: "",
-        github: "",
+        linkedin: "https://www.linkedin.com/in/aryan-kumar-950805268/",
+        instagram: "https://www.instagram.com/_aryannnnnn.n/",
+        github: "https://github.com/Arcanex7",
       },
     },
     // Add similar entries for other cards
