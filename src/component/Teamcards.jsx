@@ -61,7 +61,7 @@ const GlassCardGrid = () => {
       title: "Card 1",
       image: bhuvan,
       name: "Bhuvan Sharma",
-      details: "Hello i am bhuvan i am bouncer professionally",
+      details: "Crafting robust and scalable backend solutions for seamless user experiences",
       designation: "Development Executive",
       socialLinks: {
         linkedin: "http://www.linkedin.com/in/bhuvan-sharma-a0a470232",
@@ -123,7 +123,7 @@ const GlassCardGrid = () => {
       title: "Card 6",
       image: gurdeep,
       name: "Gurdeep",
-      details: "",
+      details: "Elevating brand presence through strategic media initiatives and compelling storytelling.",
       designation: "Media lead",
       socialLinks: {
         linkedin: "",
@@ -175,7 +175,7 @@ const GlassCardGrid = () => {
       image: aryan,
       name: "Aryan",
       details: "Creating Web Presence with 𝗛𝗧𝗠𝗟𝟱 | 𝗖𝗦𝗦𝟯 | 𝗝𝗮𝘃𝗮𝗦𝗰𝗿𝗶𝗽𝘁.REACT.js",
-      designation: "",
+      designation: "Front End Developer",
       socialLinks: {
         linkedin: "https://www.linkedin.com/in/aryan-kumar-950805268/",
         instagram: "https://www.instagram.com/_aryannnnnn.n/",
